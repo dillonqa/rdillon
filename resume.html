@@ -4,10 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Raquel Dillon</title>
-  <meta name="description" content="Resume page for Raquel Dillon with download button and contact links." />
+  <meta
+    name="description"
+    content="Resume page for Raquel Dillon with download button and contact links."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header / top navigation -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="logo" href="index.html">Raquel Dillon</a>
@@ -29,41 +33,64 @@
   </header>
 
   <main class="page-main">
+    <!-- Page intro -->
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Resume</p>
-        <h1>Resume and quick contact links</h1>
+        <div style="display:grid;grid-template-columns:140px 1fr;gap:22px;align-items:center;">
+          <!-- Replace profile.jpg with your actual photo file name if needed -->
+          <div>
+            <img
+              src="profile.jpg"
+              alt="Professional photo of Raquel Dillon"
+              style="width:140px;height:140px;object-fit:cover;border-radius:16px;border:4px solid #fff;box-shadow:0 10px 24px rgba(20,58,99,0.12);"
+            />
+          </div>
 
+          <div>
+            <p class="eyebrow">Resume</p>
+            <h1>Resume and quick contact links</h1>
+            <h2>Raquel Dillon</h2>
+            <p class="meta">Senior QA Lead | Business Analysis Support | SIT | UAT | Integration Testing</p>
+            <p>
+              Senior QA Lead focused on enterprise QA delivery, business workflow support,
+              requirements traceability, API and SQL validation, and release readiness.
+            </p>
+            <p style="margin-top:14px;color:#5d6b7a;">
+              Use this page for a quick resume download, direct contact, and LinkedIn access.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Resume download card -->
     <section class="section">
       <div class="container">
-        <div class="card card-centered">
-          <h2>Raquel Dillon</h2>
-          <p class="meta">Senior QA Lead | Business Analysis Support | SIT | UAT | Integration Testing</p>
-
+        <div class="card">
+          <h2>Download resume</h2>
           <p>
-  Senior QA Lead focused on enterprise QA delivery, business workflow support, requirements traceability, API and SQL validation, and release readiness.
-</p>
+            Download the latest resume file below or use the contact links to connect directly.
+          </p>
 
-          <div class="button-row center">
-  <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>
-    Download Resume (.docx)
-  </a>
-  <a class="btn btn-secondary" href="mailto:DillonQA@gmail.com">Email Raquel</a>
-  <a class="btn btn-secondary" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">View LinkedIn</a>
-</div>
-<div class="contact-box">
-  <p><strong>Phone:</strong> 407-687-3306</p>
-  <p><strong>Email:</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a></p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">linkedin.com/in/raquel-dillon-b1bba695</a></p>
-</div>
+          <div class="button-row">
+            <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>
+              Download Resume (.docx)
+            </a>
+            <a class="btn btn-secondary" href="mailto:DillonQA@gmail.com">Email Raquel</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">View LinkedIn</a>
+          </div>
+
+          <div class="contact-box" style="margin-top:18px;">
+            <p><strong>Phone:</strong> 407-687-3306</p>
+            <p><strong>Email:</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">linkedin.com/in/raquel-dillon-b1bba695</a></p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-wrap">
       <p>Raquel Dillon | Resume</p>
