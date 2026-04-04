@@ -9,90 +9,97 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar" role="complementary">
-      <div class="profile">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="profile-photo">
-        <h1 class="profile-name">Raquel Dillon</h1>
-        <p class="profile-role">Senior QA Lead</p>
-      </div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar">
+        <div class="name">Raquel Dillon</div>
+        <div class="role">Senior QA Lead</div>
 
-      <nav class="sidebar-nav" aria-label="Primary">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="summary.html" class="nav-link">Summary</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="resume.html" class="nav-link">Resume</a>
-        <a href="valueplan.html" class="nav-link active">30/60/90 Plan</a>
-        <a href="bio.html" class="nav-link">Bio</a>
-        <a href="onepager.html" class="nav-link">One‑Pager</a>
-      </nav>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="summary.html" class="nav-link">Summary</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="valueplan.html" class="nav-link active">30/60/90 Plan</a>
+          <a href="bio.html" class="nav-link">Bio</a>
+          <a href="onepager.html" class="nav-link">One‑Pager</a>
+        </nav>
 
-      <div class="contact-block">
-        <a class="contact-item" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-        <div class="contact-item">407‑687‑3306</div>
-        <a class="contact-item" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+        <div class="contact">
+          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
+          <div class="contact-text">407‑687‑3306</div>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        </div>
 
-      <div class="sidebar-foot">
-        <small>Senior QA • UAT • SIT • Integration</small>
+        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
       </div>
     </aside>
 
-    <main class="content" role="main">
-      <header class="page-header">
-        <h1 class="page-title">30 / 60 / 90 / 120 Plan</h1>
-        <p class="page-sub">High‑level plan to accelerate value in a Senior QA Lead role. Priorities and deliverables for the first four months.</p>
+    <div class="main">
+      <header class="main-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="header-left">
+          <h1 class="headline">30 / 60 / 90 / 120 Plan</h1>
+          <p class="subhead">High‑level plan to accelerate value in a Senior QA Lead role. Priorities and deliverables for the first four months.</p>
+        </div>
+        <div class="header-actions">
+          <a class="btn primary" href="resume.html">Download Resume</a>
+          <a class="btn outline" href="onepager.html">One‑Pager</a>
+        </div>
       </header>
 
       <section class="plan-grid">
-        <div class="plan-card card">
+        <article class="card plan-card">
           <h3>First 30 days</h3>
-          <ul class="card-list">
+          <ul class="list">
             <li>Understand product scope, release cadence, and stakeholders</li>
             <li>Review test artifacts, environments, and defect workflows</li>
             <li>Establish QA communication and triage cadence</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="plan-card card">
+        <article class="card plan-card">
           <h3>30–60 days</h3>
-          <ul class="card-list">
+          <ul class="list">
             <li>Refine test plans and acceptance criteria with BA and product teams</li>
             <li>Implement traceability between requirements and tests</li>
             <li>Identify quick wins to reduce release risk</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="plan-card card">
+        <article class="card plan-card">
           <h3>60–90 days</h3>
-          <ul class="card-list">
+          <ul class="list">
             <li>Stabilize regression and UAT processes and reporting</li>
             <li>Coordinate cross‑team SIT and integration validation</li>
             <li>Improve defect turnaround and release readiness metrics</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="plan-card card">
+        <article class="card plan-card">
           <h3>90–120 days</h3>
-          <ul class="card-list">
+          <ul class="list">
             <li>Embed QA metrics into release decision‑making</li>
             <li>Document repeatable QA processes and handoffs</li>
             <li>Plan longer‑term automation and monitoring improvements</li>
           </ul>
-        </div>
+        </article>
       </section>
 
-      <div class="cta-row">
-        <a class="btn primary" href="resume.html">Download Resume</a>
-        <a class="btn outline" href="onepager.html">Open One‑Pager</a>
-      </div>
-
-      <footer class="page-footer">
-        <small>© <span id="year-plan"></span> Raquel Dillon</small>
+      <footer class="main-footer">
+        <div>© <span id="year"></span> Raquel Dillon</div>
       </footer>
-    </main>
+    </div>
   </div>
 
-  <script>document.getElementById('year-plan').textContent = new Date().getFullYear();</script>
+  <script>
+    (function(){
+      var btn = document.getElementById('menuToggle');
+      var sidebar = document.getElementById('sidebar');
+      btn && btn.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
