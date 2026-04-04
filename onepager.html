@@ -4,52 +4,60 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>One‑Pager — Raquel Dillon</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Home">
-        <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
-        <div class="brand-text">
-          <div class="name">Raquel Dillon</div>
-          <div class="role">Senior QA Lead</div>
-        </div>
-      </a>
+  <div class="layout">
+    <aside class="sidebar" role="complementary">
+      <div class="profile">
+        <img src="profile.jpg" alt="Raquel Dillon headshot" class="profile-photo">
+        <h1 class="profile-name">Raquel Dillon</h1>
+        <p class="profile-role">Senior QA Lead</p>
+      </div>
 
-      <nav class="main-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="summary.html">Summary</a>
-        <a href="experience.html">Experience</a>
-        <a href="resume.html">Resume</a>
-        <a href="valueplan.html">Value Plan</a>
-        <a href="bio.html">Bio</a>
-        <a href="onepager.html" class="active">One‑Pager</a>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="summary.html" class="nav-link">Summary</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+        <a href="bio.html" class="nav-link">Bio</a>
+        <a href="onepager.html" class="nav-link active">One‑Pager</a>
       </nav>
 
-      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleNav(this)">Menu</button>
-    </div>
-  </header>
+      <div class="contact-block">
+        <a class="contact-item" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
+        <div class="contact-item">407‑687‑3306</div>
+        <a class="contact-item" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
 
-  <main class="container">
-    <section class="onepager">
-      <h1 class="section-title">One‑Pager</h1>
-      <p class="lead">Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.</p>
+      <div class="sidebar-foot">
+        <small>Senior QA • UAT • SIT • Integration</small>
+      </div>
+    </aside>
 
-      <div class="onepager-grid">
+    <main class="content" role="main">
+      <header class="page-header">
+        <h1 class="page-title">One‑Pager</h1>
+        <p class="page-sub">Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.</p>
+      </header>
+
+      <section class="onepager-grid">
         <div class="card">
-          <h3>Who I am</h3>
+          <h3 class="card-title">Who I am</h3>
           <p class="muted">Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms.</p>
         </div>
 
         <div class="card">
-          <h3>Best‑fit roles</h3>
+          <h3 class="card-title">Best‑fit roles</h3>
           <p class="muted">Senior QA Lead; Senior QA; UAT Lead; SIT Lead; Integration QA with BA responsibilities</p>
         </div>
 
         <div class="card">
-          <h3>Top strengths</h3>
-          <ul class="compact-list">
+          <h3 class="card-title">Top strengths</h3>
+          <ul class="card-list">
             <li>Test planning and execution oversight</li>
             <li>Requirements traceability and acceptance criteria</li>
             <li>Backend validation using SQL and SAP HANA</li>
@@ -58,30 +66,21 @@
         </div>
 
         <div class="card">
-          <h3>Contact</h3>
+          <h3 class="card-title">Contact</h3>
           <p class="muted"><strong>Email</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a><br><strong>Phone</strong> 407‑687‑3306<br><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">raquel-dillon</a></p>
         </div>
-      </div>
+      </section>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
+        <a class="btn primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">© <span id="year7"></span> Raquel Dillon</div>
-      <div class="footer-right"><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> · <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
-    </div>
-  </footer>
+      <footer class="page-footer">
+        <small>© <span id="year-one"></span> Raquel Dillon</small>
+      </footer>
+    </main>
+  </div>
 
-  <script>
-    function toggleNav(btn){
-      var open = document.body.classList.toggle('nav-open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-    document.getElementById('year7').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year-one').textContent = new Date().getFullYear();</script>
 </body>
 </html>
