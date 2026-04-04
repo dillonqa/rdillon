@@ -1,26 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One-Pager | Raquel Dillon</title>
-  <meta
-    name="description"
-    content="Fast-scan one-pager for recruiters and hiring managers reviewing Raquel Dillon."
-  />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>One-Pager — Raquel Dillon</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / top navigation -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="index.html">Raquel Dillon</a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-        ☰
-      </button>
-
-      <nav class="site-nav" id="siteNav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
+        <div class="brand-text">
+          <div class="name">Raquel Dillon</div>
+          <div class="role">Senior QA Lead</div>
+        </div>
+      </a>
+      <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="summary.html">Summary</a>
         <a href="experience.html">Experience</a>
@@ -29,166 +25,53 @@
         <a href="bio.html">Bio</a>
         <a href="onepager.html" class="active">One-Pager</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
     </div>
   </header>
 
-  <main class="page-main">
-    <!-- Page intro -->
-    <section class="page-hero">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:165px 1fr;gap:24px;align-items:center;">
-          <!-- Replace profile.jpg with your actual photo file name if needed -->
-          <div>
-            <img
-              src="profile.jpg"
-              alt="Professional photo of Raquel Dillon"
-              style="width:165px;height:165px;object-fit:cover;border-radius:18px;border:4px solid #fff;box-shadow:0 10px 24px rgba(20,58,99,0.12);"
-            />
-          </div>
+  <main class="container">
+    <section class="onepager">
+      <h1>One-Pager</h1>
+      <p class="lead">Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.</p>
 
-          <div>
-            <p class="eyebrow">One-Pager</p>
-            <h1>Senior QA Lead snapshot</h1>
-            <p class="hero-text narrow">
-              A fast recruiter view of role fit, strengths, tools, and selected experience highlights.
-            </p>
+      <div class="onepager-grid">
+        <div>
+          <h3>Who I am</h3>
+          <p>Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms.</p>
+        </div>
 
-            <h2 style="margin-top:18px;">Raquel Dillon</h2>
-            <p class="meta">
-              Senior QA Lead | Business Analysis Support | SIT | UAT | Integration Testing |
-              API Testing | SQL Validation | Data Validation | Release Readiness
-            </p>
-            <p>
-              Orlando, FL |
-              <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> |
-              407-687-3306 |
-              <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-            </p>
-          </div>
+        <div>
+          <h3>Best-fit roles</h3>
+          <p>Senior QA Lead; Senior QA; UAT Lead; SIT Lead; Integration QA with BA responsibilities</p>
+        </div>
+
+        <div>
+          <h3>Top strengths</h3>
+          <ul class="compact-list">
+            <li>Test planning and execution oversight</li>
+            <li>Requirements traceability and acceptance criteria</li>
+            <li>Backend validation using SQL and SAP HANA</li>
+            <li>Cross-team coordination for release readiness</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <p><strong>Email</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a><br><strong>Phone</strong> 407-687-3306<br><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">raquel-dillon</a></p>
         </div>
       </div>
-    </section>
 
-    <!-- Quick stats / fast scan -->
-    <section class="section">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card">
-            <h3>Industries</h3>
-            <p>Automotive, government, hospitality, education, financial services, and digital media</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>Core role fit</h3>
-            <p>Senior QA Lead, Senior QA, UAT, SIT, and Integration Testing roles that also need strong business workflow and requirements support</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>Strength areas</h3>
-            <p>Requirements support, traceability, validation, defect triage, and release readiness</p>
-          </div>
-
-          <div class="stat-card">
-            <h3>Hands-on tools</h3>
-            <p>Azure DevOps, Jira, Postman, SoapUI, BrowserStack, SQL, and SAP HANA</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Executive summary -->
-    <section class="section section-alt">
-      <div class="container">
-        <h2>Executive summary</h2>
-        <div class="card">
-          <p>
-            Senior QA professional with experience supporting enterprise platforms across multiple industries.
-            Combines QA leadership, business workflow support, requirements traceability, and hands-on validation
-            to help teams move toward more confident releases.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Core competencies -->
-    <section class="section">
-      <div class="container">
-        <h2>Core competencies</h2>
-
-        <div class="card-grid two-up">
-          <article class="card">
-            <ul class="clean-list">
-              <li>Test planning and execution</li>
-              <li>SIT and UAT coordination</li>
-              <li>Integration testing</li>
-              <li>API testing</li>
-              <li>ETL testing</li>
-              <li>SQL validation</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <ul class="clean-list">
-              <li>Data reconciliation</li>
-              <li>Requirements clarification</li>
-              <li>Acceptance criteria support</li>
-              <li>Requirements traceability</li>
-              <li>Defect triage and evidence capture</li>
-              <li>Release readiness support</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Selected highlights -->
-    <section class="section section-alt">
-      <div class="container">
-        <h2>Selected career highlights</h2>
-
-        <div class="card-grid one-up">
-          <article class="card">
-            <p><strong>General Motors:</strong> Led UAT, integration testing, and API validation across dealer and B2B vendor platforms, supporting release readiness and backend data checks.</p>
-          </article>
-
-          <article class="card">
-            <p><strong>Civix:</strong> Supported government SaaS platforms through accessibility testing, traceability support, QA dashboards, and post-deployment validation.</p>
-          </article>
-
-          <article class="card">
-            <p><strong>Walt Disney World:</strong> Supported enterprise QA across pricing, analytics, resort, transportation, finance, HR, and operational systems with SQL-based validation and requirements review.</p>
-          </article>
-
-          <article class="card">
-            <p><strong>OCPS and LSQ:</strong> Led ERP modernization, UAT, SIT, workflow validation, and financial application testing across business-critical systems.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Action buttons -->
-    <section class="section">
-      <div class="container">
-        <div class="button-row center">
-          <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
-          <a class="btn btn-secondary" href="bio.html">Read Full Bio</a>
-          <a class="btn btn-secondary" href="valueplan.html">Read Value Plan</a>
-        </div>
+      <div class="cta-row">
+        <a class="btn" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>Raquel Dillon | One-Pager</p>
-      <p>
-        <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
+    <div class="container footer-inner">
+      <div>Raquel Dillon | Senior QA Lead</div>
+      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
