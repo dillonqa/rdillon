@@ -1,26 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Summary | Raquel Dillon</title>
-  <meta
-    name="description"
-    content="Professional summary, core skills, tools, platforms, and background for Raquel Dillon."
-  />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Summary — Raquel Dillon</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / top navigation -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="index.html">Raquel Dillon</a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-        ☰
-      </button>
-
-      <nav class="site-nav" id="siteNav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
+        <div class="brand-text">
+          <div class="name">Raquel Dillon</div>
+          <div class="role">Senior QA Lead</div>
+        </div>
+      </a>
+      <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="summary.html" class="active">Summary</a>
         <a href="experience.html">Experience</a>
@@ -29,187 +25,57 @@
         <a href="bio.html">Bio</a>
         <a href="onepager.html">One-Pager</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
     </div>
   </header>
 
-  <main class="page-main">
-    <!-- Page intro -->
-    <section class="page-hero">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:170px 1fr;gap:24px;align-items:center;">
-          <!-- Replace profile.jpg with your actual photo file name if needed -->
-          <div>
-            <img
-              src="profile.jpg"
-              alt="Professional photo of Raquel Dillon"
-              style="width:170px;height:170px;object-fit:cover;border-radius:16px;border:4px solid #fff;box-shadow:0 10px 24px rgba(20,58,99,0.12);"
-            />
-          </div>
-
-          <div>
-            <p class="eyebrow">Professional Summary</p>
-            <h1>Senior QA Lead with hands-on testing depth and business analysis support experience.</h1>
-            <p class="hero-text narrow">
-              Experience supporting enterprise platforms across multiple industries, with a focus on
-              business requirements, workflow validation, acceptance criteria, traceability,
-              and release readiness.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Professional summary -->
+  <main class="container">
     <section class="section">
-      <div class="container">
-        <h2>Professional summary</h2>
+      <h1>Professional summary</h1>
+      <p class="lead">Senior QA Lead supporting SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms. Experienced in QA leadership, requirements traceability, and hands-on validation across complex systems.</p>
 
-        <div class="card">
-          <p>
-            Senior QA professional with experience supporting enterprise platforms across automotive,
-            government, education, financial services, hospitality, entertainment, transportation,
-            and digital media.
-          </p>
+      <div class="two-col">
+        <div>
+          <h2>What I bring</h2>
+          <ul class="compact-list">
+            <li><strong>QA leadership</strong> — Test planning, execution oversight, defect triage, stakeholder communication, release readiness</li>
+            <li><strong>Business analysis support</strong> — Requirements clarification, acceptance criteria, stakeholder reviews, traceability</li>
+            <li><strong>Hands-on validation</strong> — SIT, UAT, integration testing, API testing, ETL, SQL validation, data reconciliation</li>
+          </ul>
+        </div>
 
-          <p>
-            Brings QA leadership and business analysis support across test planning, requirements review,
-            workflow validation, stakeholder collaboration, requirements traceability, and release readiness.
-          </p>
-
-          <p>
-            Hands-on experience includes SIT, UAT, integration testing, API testing, ETL testing,
-            SQL validation, data reconciliation, web and mobile testing, accessibility testing,
-            and evidence-based defect management.
-          </p>
+        <div>
+          <h2>Tools and systems</h2>
+          <ul class="compact-list">
+            <li>Azure DevOps; Jira; Confluence</li>
+            <li>Postman; SoapUI; Insomnia</li>
+            <li>BrowserStack; TestRail; HP ALM/Quality Center</li>
+            <li>SAP ERP; SAP HANA; Workday; Salesforce; PeopleSoft</li>
+            <li>SQL; Oracle; Microsoft SQL Server</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- Core skills -->
-    <section class="section section-alt">
-      <div class="container">
-        <h2>Core skills</h2>
+      <h2>Featured highlights</h2>
+      <ul class="compact-list">
+        <li>Enterprise platform testing across multiple industries</li>
+        <li>Requirements review and workflow validation</li>
+        <li>Acceptance criteria support and traceability</li>
+        <li>Release readiness coordination and defect follow-through</li>
+      </ul>
 
-        <div class="card-grid two-up">
-          <article class="card">
-            <h3>QA leadership and delivery</h3>
-            <ul class="clean-list">
-              <li>Test planning and execution</li>
-              <li>SIT and UAT coordination</li>
-              <li>Release readiness support</li>
-              <li>Defect management and triage</li>
-              <li>QA status reporting</li>
-              <li>Cross-functional coordination</li>
-              <li>Agile and Scrum ceremonies</li>
-              <li>QA metrics and dashboards</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Business analysis support</h3>
-            <ul class="clean-list">
-              <li>Requirements clarification</li>
-              <li>User stories and stakeholder reviews</li>
-              <li>Acceptance criteria support</li>
-              <li>Requirements traceability</li>
-              <li>Business workflow review</li>
-              <li>Scope definition support</li>
-              <li>Documentation review</li>
-              <li>Release readiness decision support</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Testing and validation</h3>
-            <ul class="clean-list">
-              <li>Functional testing</li>
-              <li>Regression testing</li>
-              <li>Integration testing</li>
-              <li>End-to-end testing</li>
-              <li>API testing</li>
-              <li>ETL testing</li>
-              <li>SQL backend validation</li>
-              <li>Data reconciliation</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Web, mobile, and accessibility</h3>
-            <ul class="clean-list">
-              <li>Web testing</li>
-              <li>Mobile testing on iOS and Android</li>
-              <li>Cross-browser testing</li>
-              <li>Cross-device validation</li>
-              <li>Accessibility testing</li>
-              <li>Usability testing</li>
-              <li>Evidence capture using logs and HAR files</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tools and platforms -->
-    <section class="section">
-      <div class="container">
-        <h2>Tools and platforms</h2>
-
-        <div class="card-grid two-up">
-          <article class="card">
-            <h3>Tools</h3>
-            <ul class="clean-list">
-              <li>Azure DevOps, Jira, Confluence, TestRail</li>
-              <li>HP ALM/Quality Center, Postman, SoapUI, Insomnia</li>
-              <li>Selenium WebDriver, Katalon, TestComplete, BrowserStack</li>
-              <li>Azure Monitor, Azure Log Analytics, Elasticsearch</li>
-              <li>Git, GitHub, Kubernetes, Toad, XMind, Excel, Microsoft Access</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Platforms</h3>
-            <ul class="clean-list">
-              <li>SAP ERP, SAP HANA, SAP HR, SAP SuccessFactors</li>
-              <li>Oracle Fusion Cloud, Workday, Salesforce</li>
-              <li>PeopleSoft, Microsoft Dynamics 365, Skyward SIS</li>
-              <li>Citrix and e-commerce platforms</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Databases and technologies</h3>
-            <ul class="clean-list">
-              <li>SQL, PL/SQL, Oracle, Microsoft SQL Server</li>
-              <li>Stored procedure testing, trigger testing, EDI</li>
-              <li>Java, Perl, Ruby, .NET, HTML, Unix/Linux, AS/400</li>
-              <li>POS, RFID, ATC, PHP, Adobe Analytics, Google Analytics 4</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Best-fit roles</h3>
-            <p>
-              Strong fit for Senior QA Lead, Senior QA, UAT, SIT, and Integration Testing roles
-              that need requirements support, validation discipline, traceability,
-              and release readiness coordination.
-            </p>
-          </article>
-        </div>
+      <div class="cta-row">
+        <a class="btn" href="resume.html">View Resume</a>
+        <a class="btn ghost" href="onepager.html">Open One-Pager</a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>Raquel Dillon | Summary</p>
-      <p>
-        <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
+    <div class="container footer-inner">
+      <div>Raquel Dillon | Senior QA Lead</div>
+      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
