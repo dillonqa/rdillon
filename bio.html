@@ -4,65 +4,68 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bio — Raquel Dillon</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Home">
-        <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
-        <div class="brand-text">
-          <div class="name">Raquel Dillon</div>
-          <div class="role">Senior QA Lead</div>
-        </div>
-      </a>
+  <div class="layout">
+    <aside class="sidebar" role="complementary">
+      <div class="profile">
+        <img src="profile.jpg" alt="Raquel Dillon headshot" class="profile-photo">
+        <h1 class="profile-name">Raquel Dillon</h1>
+        <p class="profile-role">Senior QA Lead</p>
+      </div>
 
-      <nav class="main-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="summary.html">Summary</a>
-        <a href="experience.html">Experience</a>
-        <a href="resume.html">Resume</a>
-        <a href="valueplan.html">Value Plan</a>
-        <a href="bio.html" class="active">Bio</a>
-        <a href="onepager.html">One-Pager</a>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="summary.html" class="nav-link">Summary</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+        <a href="bio.html" class="nav-link active">Bio</a>
+        <a href="onepager.html" class="nav-link">One‑Pager</a>
       </nav>
 
-      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleNav(this)">Menu</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="section">
-      <h1 class="section-title">Bio</h1>
-      <p class="lead">Senior QA Lead with extensive experience delivering QA across enterprise systems. I focus on aligning QA activities with business goals, clarifying requirements, and ensuring release readiness through evidence‑based validation.</p>
-
-      <h2 class="subhead">Professional approach</h2>
-      <ul class="compact-list">
-        <li>Collaborative stakeholder engagement to define success criteria and acceptance tests</li>
-        <li>Traceability from requirements to test coverage to ensure gaps are visible and addressed</li>
-        <li>Hands‑on validation across UI, API, ETL, and backend data workflows</li>
-      </ul>
-
-      <div class="cta-row">
-        <a class="btn btn-primary" href="resume.html">Download Resume</a>
-        <a class="btn btn-outline" href="onepager.html">Open One‑Pager</a>
+      <div class="contact-block">
+        <a class="contact-item" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
+        <div class="contact-item">407‑687‑3306</div>
+        <a class="contact-item" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">© <span id="year6"></span> Raquel Dillon</div>
-      <div class="footer-right"><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> · <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
-    </div>
-  </footer>
+      <div class="sidebar-foot">
+        <small>Senior QA • UAT • SIT • Integration</small>
+      </div>
+    </aside>
 
-  <script>
-    function toggleNav(btn){
-      var open = document.body.classList.toggle('nav-open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-    document.getElementById('year6').textContent = new Date().getFullYear();
-  </script>
+    <main class="content" role="main">
+      <header class="page-header">
+        <h1 class="page-title">Bio</h1>
+        <p class="page-sub">Senior QA Lead with extensive experience delivering QA across enterprise systems. I focus on aligning QA activities with business goals, clarifying requirements, and ensuring release readiness through evidence‑based validation.</p>
+      </header>
+
+      <section class="section">
+        <div class="card">
+          <h3 class="card-title">Professional approach</h3>
+          <ul class="card-list">
+            <li>Collaborative stakeholder engagement to define success criteria and acceptance tests</li>
+            <li>Traceability from requirements to test coverage to ensure gaps are visible and addressed</li>
+            <li>Hands‑on validation across UI, API, ETL, and backend data workflows</li>
+          </ul>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="resume.html">Download Resume</a>
+          <a class="btn outline" href="onepager.html">Open One‑Pager</a>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <small>© <span id="year-bio"></span> Raquel Dillon</small>
+      </footer>
+    </main>
+  </div>
+
+  <script>document.getElementById('year-bio').textContent = new Date().getFullYear();</script>
 </body>
 </html>
