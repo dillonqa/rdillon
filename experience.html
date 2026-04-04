@@ -9,14 +9,15 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Home">
         <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
         <div class="brand-text">
           <div class="name">Raquel Dillon</div>
           <div class="role">Senior QA Lead</div>
         </div>
       </a>
-      <nav class="main-nav">
+
+      <nav class="main-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="summary.html">Summary</a>
         <a href="experience.html" class="active">Experience</a>
@@ -25,106 +26,116 @@
         <a href="bio.html">Bio</a>
         <a href="onepager.html">One-Pager</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleNav(this)">Menu</button>
     </div>
   </header>
 
   <main class="container">
     <section class="section">
-      <h1>Selected experience</h1>
-      <p class="lead">Experience across automotive, government, hospitality, education, financial services, and digital media with strengths in QA leadership, workflow support, traceability, and hands-on validation.</p>
+      <h1 class="section-title">Selected experience</h1>
+      <p class="lead">Experience across automotive, government, hospitality, education, financial services, and digital media. Focused on QA leadership, traceability, and hands‑on validation.</p>
+
+      <div class="experience-snapshot card">
+        <strong>Experience snapshot:</strong> Senior QA leadership across enterprise platforms; hands‑on with API, ETL, SQL, and release readiness.
+      </div>
 
       <article class="role">
-        <h3>General Motors</h3>
+        <h3 class="role-title">General Motors</h3>
         <div class="meta">Dealer Sales Solution Testing Lead (Contract) — Remote — Aug 2022 – Jan 2025</div>
-        <ul>
+        <ul class="compact-list">
           <li>Led UAT, integration testing, and API testing across dealer and B2B vendor platforms.</li>
-          <li>Onboarded dealers and software vendors and reviewed requirements to confirm scope and testability.</li>
-          <li>Served as Business Owner / Product Owner for multiple dealer applications and partnered with stakeholders on scope and release expectations.</li>
-          <li>Coordinated SIT/UAT across API, ETL testing, and SAP HANA workflows and executed backend data validation using SQL and SAP HANA scripts.</li>
-          <li>Supported defect investigation using Azure Monitor, Azure Log Analytics, Elasticsearch, HAR files, and ServiceNow.</li>
+          <li>Onboarded dealers and vendors; reviewed requirements to confirm scope and testability.</li>
+          <li>Coordinated SIT/UAT across API, ETL, and SAP HANA workflows; executed backend validation using SQL.</li>
+          <li>Supported defect investigation using Azure Monitor, Log Analytics, Elasticsearch, HAR files, and ServiceNow.</li>
         </ul>
       </article>
 
       <article class="role">
-        <h3>Civix</h3>
+        <h3 class="role-title">Civix</h3>
         <div class="meta">Senior QA Project Lead — Remote — Sept 2020 – Jun 2022</div>
-        <ul>
-          <li>Supported large-scale SaaS platforms used by government agencies, coordinating validation across web and mobile applications.</li>
-          <li>Served as Scrum QA Lead, tracked regression progress, and surfaced delivery risks.</li>
-          <li>Reviewed user stories, clarified expected outcomes, and confirmed requirements before execution.</li>
-          <li>Validated backend workflows through SQL checks and API testing in Postman and led accessibility testing and requirements traceability.</li>
-          <li>Built QA dashboards and rollups to support defect triage and status reporting.</li>
+        <ul class="compact-list">
+          <li>Supported large‑scale SaaS platforms for government agencies; coordinated validation across web and mobile.</li>
+          <li>Served as Scrum QA Lead; tracked regression and surfaced delivery risks.</li>
+          <li>Validated backend workflows with SQL and API testing; led accessibility testing and traceability efforts.</li>
         </ul>
       </article>
 
       <article class="role">
-        <h3>Walt Disney World</h3>
+        <h3 class="role-title">Walt Disney World</h3>
         <div class="meta">Senior QA / BA Lead (Contract) — Orlando, FL — Oct 2019 – Apr 2020</div>
-        <ul>
-          <li>Partnered with Revenue Management to validate pricing logic, rate configurations, and reporting accuracy.</li>
-          <li>Defined QA deliverables and maintained requirements traceability from intake through fulfillment.</li>
+        <ul class="compact-list">
+          <li>Validated pricing logic and reporting accuracy with Revenue Management.</li>
+          <li>Maintained requirements traceability and QA deliverables from intake through fulfillment.</li>
           <li>Executed ETL testing, data reconciliation, and Power BI dashboard validation using SQL and Excel.</li>
         </ul>
       </article>
 
       <article class="role">
-        <h3>Orange County Public Schools</h3>
+        <h3 class="role-title">Orange County Public Schools</h3>
         <div class="meta">QA Lead / UAT Project Facilitator (Contract) — Orlando, FL — May 2019 – Oct 2019</div>
-        <ul>
-          <li>Led test planning, UAT coordination, and execution for ERP modernization across PeopleSoft and Skyward.</li>
-          <li>Managed defect lifecycles in Jira with detailed evidence and coordinated UAT sign-offs with business and project teams.</li>
+        <ul class="compact-list">
+          <li>Led test planning and UAT coordination for ERP modernization across PeopleSoft and Skyward.</li>
+          <li>Managed defect lifecycles in Jira and coordinated UAT sign‑offs with business teams.</li>
         </ul>
       </article>
 
       <article class="role">
-        <h3>Digicel PlayGo</h3>
+        <h3 class="role-title">Digicel PlayGo</h3>
         <div class="meta">Senior QA Engineer / Business Project Lead — Miami, FL — May 2017 – May 2019</div>
-        <ul>
-          <li>Executed mobile testing across iOS, Android, and set-top box applications and validated streaming quality and e-commerce flows.</li>
-          <li>Used Jira for defect tracking and SQL for backend verification.</li>
+        <ul class="compact-list">
+          <li>Executed mobile testing across iOS, Android, and set‑top box; validated streaming quality and e‑commerce flows.</li>
+          <li>Tracked defects in Jira and performed backend verification with SQL.</li>
         </ul>
       </article>
 
       <article class="role">
-        <h3>Florida Virtual School</h3>
+        <h3 class="role-title">Florida Virtual School</h3>
         <div class="meta">Senior QA Analyst (Contract) — Sept 2016 – Feb 2017</div>
-        <ul>
-          <li>Developed and executed test strategies for functional, regression, and integration testing and performed API testing in Postman.</li>
-          <li>Performed cross-browser testing in BrowserStack and used SQL and API testing to verify end-to-end workflows.</li>
+        <ul class="compact-list">
+          <li>Developed test strategies for functional, regression, and integration testing; performed API testing in Postman.</li>
+          <li>Performed cross‑browser testing in BrowserStack and verified end‑to‑end workflows with SQL.</li>
         </ul>
       </article>
 
       <article class="role">
-        <h3>LSQ Funding</h3>
+        <h3 class="role-title">LSQ Funding</h3>
         <div class="meta">Senior QA Lead — Maitland, FL — Mar 2015 – May 2016</div>
-        <ul>
-          <li>Led SIT and UAT for financial applications supporting cash flow and invoicing workflows and created test strategies and plans.</li>
-          <li>Executed backend data validation using SQL and supported automation with TestComplete and API testing with SoapUI.</li>
+        <ul class="compact-list">
+          <li>Led SIT and UAT for financial applications; created test strategies and plans.</li>
+          <li>Executed backend validation using SQL and supported automation with TestComplete and SoapUI.</li>
         </ul>
       </article>
 
       <article class="role">
-        <h3>Walt Disney World</h3>
+        <h3 class="role-title">Walt Disney World</h3>
         <div class="meta">Senior Tech Specialist — Orlando, FL — Nov 2002 – Jan 2015</div>
-        <ul>
-          <li>Led QA strategy and end-to-end delivery across enterprise platforms supporting parks, hotels, transportation, POS, finance, and HR systems.</li>
-          <li>Managed blended manual and automation QA teams and executed test cases in HP QC/ALM and SoapUI.</li>
+        <ul class="compact-list">
+          <li>Led QA strategy and delivery across enterprise platforms supporting parks, hotels, transportation, POS, finance, and HR systems.</li>
+          <li>Managed blended manual and automation QA teams; executed test cases in HP QC/ALM and SoapUI.</li>
         </ul>
       </article>
 
       <div class="cta-row">
-        <a class="btn" href="resume.html">Download Full Resume</a>
-        <a class="btn ghost" href="onepager.html">Open One-Pager</a>
+        <a class="btn btn-primary" href="resume.html">Download Full Resume</a>
+        <a class="btn btn-outline" href="onepager.html">Open One‑Pager</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>Raquel Dillon | Senior QA Lead</div>
-      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
+      <div class="footer-left">© <span id="year3"></span> Raquel Dillon</div>
+      <div class="footer-right"><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> · <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
+
+  <script>
+    function toggleNav(btn){
+      var open = document.body.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
