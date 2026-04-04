@@ -9,84 +9,91 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar" role="complementary">
-      <div class="profile">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="profile-photo">
-        <h1 class="profile-name">Raquel Dillon</h1>
-        <p class="profile-role">Senior QA Lead</p>
-      </div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar">
+        <div class="name">Raquel Dillon</div>
+        <div class="role">Senior QA Lead</div>
 
-      <nav class="sidebar-nav" aria-label="Primary">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="summary.html" class="nav-link active">Summary</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="resume.html" class="nav-link">Resume</a>
-        <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
-        <a href="bio.html" class="nav-link">Bio</a>
-        <a href="onepager.html" class="nav-link">One‑Pager</a>
-      </nav>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="summary.html" class="nav-link active">Summary</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+          <a href="bio.html" class="nav-link">Bio</a>
+          <a href="onepager.html" class="nav-link">One‑Pager</a>
+        </nav>
 
-      <div class="contact-block">
-        <a class="contact-item" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-        <div class="contact-item">407‑687‑3306</div>
-        <a class="contact-item" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+        <div class="contact">
+          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
+          <div class="contact-text">407‑687‑3306</div>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        </div>
 
-      <div class="sidebar-foot">
-        <small>Senior QA • UAT • SIT • Integration</small>
+        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
       </div>
     </aside>
 
-    <main class="content" role="main">
-      <header class="page-header">
-        <h1 class="page-title">Professional summary</h1>
-        <p class="page-sub">Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness for enterprise platforms. Skilled at aligning QA activities with business goals and ensuring traceable acceptance criteria.</p>
+    <div class="main">
+      <header class="main-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="header-left">
+          <h1 class="headline">Professional summary</h1>
+          <p class="subhead">Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness for enterprise platforms. Skilled at aligning QA activities with business goals and ensuring traceable acceptance criteria.</p>
+        </div>
+        <div class="header-actions">
+          <a class="btn primary" href="resume.html">View Resume</a>
+          <a class="btn outline" href="onepager.html">One‑Pager</a>
+        </div>
       </header>
 
-      <section class="section two-column">
-        <div class="card">
-          <h3 class="card-title">What I bring</h3>
-          <ul class="card-list">
+      <section class="grid two-col">
+        <article class="card">
+          <h2 class="card-title">What I bring</h2>
+          <ul class="list">
             <li><strong>QA leadership</strong> — Test planning, defect triage, stakeholder communication, release readiness</li>
             <li><strong>BA collaboration</strong> — Requirements clarification, acceptance criteria, traceability</li>
             <li><strong>Hands‑on validation</strong> — API testing, ETL/SQL verification, integration and regression testing</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="card">
-          <h3 class="card-title">Tools & systems</h3>
-          <ul class="card-list">
+        <article class="card">
+          <h2 class="card-title">Tools & systems</h2>
+          <ul class="list">
             <li>Azure DevOps; Jira; Confluence; TestRail</li>
             <li>Postman; SoapUI; BrowserStack</li>
             <li>SAP ERP; SAP HANA; Salesforce; PeopleSoft</li>
             <li>SQL; Oracle; Microsoft SQL Server</li>
           </ul>
-        </div>
+        </article>
       </section>
 
-      <section class="section">
-        <div class="card">
-          <h3 class="card-title">Featured highlights</h3>
-          <ul class="card-list">
+      <section class="grid">
+        <article class="card">
+          <h2 class="card-title">Featured highlights</h2>
+          <ul class="list">
             <li>Enterprise platform testing across multiple industries</li>
             <li>Requirements review and acceptance criteria support</li>
             <li>Release readiness coordination and defect follow‑through</li>
           </ul>
-        </div>
+        </article>
       </section>
 
-      <div class="cta-row">
-        <a class="btn primary" href="resume.html">View Resume</a>
-        <a class="btn outline" href="onepager.html">Open One‑Pager</a>
-      </div>
-
-      <footer class="page-footer">
-        <small>© <span id="year-sum"></span> Raquel Dillon</small>
+      <footer class="main-footer">
+        <div>© <span id="year"></span> Raquel Dillon</div>
       </footer>
-    </main>
+    </div>
   </div>
 
-  <script>document.getElementById('year-sum').textContent = new Date().getFullYear();</script>
+  <script>
+    (function(){
+      var btn = document.getElementById('menuToggle');
+      var sidebar = document.getElementById('sidebar');
+      btn && btn.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
