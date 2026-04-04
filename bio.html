@@ -9,63 +9,70 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar" role="complementary">
-      <div class="profile">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="profile-photo">
-        <h1 class="profile-name">Raquel Dillon</h1>
-        <p class="profile-role">Senior QA Lead</p>
-      </div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar">
+        <div class="name">Raquel Dillon</div>
+        <div class="role">Senior QA Lead</div>
 
-      <nav class="sidebar-nav" aria-label="Primary">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="summary.html" class="nav-link">Summary</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="resume.html" class="nav-link">Resume</a>
-        <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
-        <a href="bio.html" class="nav-link active">Bio</a>
-        <a href="onepager.html" class="nav-link">One‑Pager</a>
-      </nav>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="summary.html" class="nav-link">Summary</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+          <a href="bio.html" class="nav-link active">Bio</a>
+          <a href="onepager.html" class="nav-link">One‑Pager</a>
+        </nav>
 
-      <div class="contact-block">
-        <a class="contact-item" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-        <div class="contact-item">407‑687‑3306</div>
-        <a class="contact-item" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+        <div class="contact">
+          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
+          <div class="contact-text">407‑687‑3306</div>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        </div>
 
-      <div class="sidebar-foot">
-        <small>Senior QA • UAT • SIT • Integration</small>
+        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
       </div>
     </aside>
 
-    <main class="content" role="main">
-      <header class="page-header">
-        <h1 class="page-title">Bio</h1>
-        <p class="page-sub">Senior QA Lead with extensive experience delivering QA across enterprise systems. I focus on aligning QA activities with business goals, clarifying requirements, and ensuring release readiness through evidence‑based validation.</p>
+    <div class="main">
+      <header class="main-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="header-left">
+          <h1 class="headline">Bio</h1>
+          <p class="subhead">Senior QA Lead with extensive experience delivering QA across enterprise systems. I focus on aligning QA activities with business goals, clarifying requirements, and ensuring release readiness through evidence‑based validation.</p>
+        </div>
+        <div class="header-actions">
+          <a class="btn primary" href="resume.html">Download Resume</a>
+          <a class="btn outline" href="onepager.html">One‑Pager</a>
+        </div>
       </header>
 
-      <section class="section">
-        <div class="card">
-          <h3 class="card-title">Professional approach</h3>
-          <ul class="card-list">
+      <section class="grid">
+        <article class="card">
+          <h2 class="card-title">Professional approach</h2>
+          <ul class="list">
             <li>Collaborative stakeholder engagement to define success criteria and acceptance tests</li>
             <li>Traceability from requirements to test coverage to ensure gaps are visible and addressed</li>
             <li>Hands‑on validation across UI, API, ETL, and backend data workflows</li>
           </ul>
-        </div>
-
-        <div class="cta-row">
-          <a class="btn primary" href="resume.html">Download Resume</a>
-          <a class="btn outline" href="onepager.html">Open One‑Pager</a>
-        </div>
+        </article>
       </section>
 
-      <footer class="page-footer">
-        <small>© <span id="year-bio"></span> Raquel Dillon</small>
+      <footer class="main-footer">
+        <div>© <span id="year"></span> Raquel Dillon</div>
       </footer>
-    </main>
+    </div>
   </div>
 
-  <script>document.getElementById('year-bio').textContent = new Date().getFullYear();</script>
+  <script>
+    (function(){
+      var btn = document.getElementById('menuToggle');
+      var sidebar = document.getElementById('sidebar');
+      btn && btn.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
