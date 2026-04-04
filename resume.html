@@ -1,26 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume | Raquel Dillon</title>
-  <meta
-    name="description"
-    content="Resume page for Raquel Dillon with download button and contact links."
-  />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Raquel Dillon</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / top navigation -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="index.html">Raquel Dillon</a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-        ☰
-      </button>
-
-      <nav class="site-nav" id="siteNav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
+        <div class="brand-text">
+          <div class="name">Raquel Dillon</div>
+          <div class="role">Senior QA Lead</div>
+        </div>
+      </a>
+      <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="summary.html">Summary</a>
         <a href="experience.html">Experience</a>
@@ -29,78 +25,34 @@
         <a href="bio.html">Bio</a>
         <a href="onepager.html">One-Pager</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
     </div>
   </header>
 
-  <main class="page-main">
-    <!-- Page intro -->
-    <section class="page-hero">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:140px 1fr;gap:22px;align-items:center;">
-          <!-- Replace profile.jpg with your actual photo file name if needed -->
-          <div>
-            <img
-              src="profile.jpg"
-              alt="Professional photo of Raquel Dillon"
-              style="width:140px;height:140px;object-fit:cover;border-radius:16px;border:4px solid #fff;box-shadow:0 10px 24px rgba(20,58,99,0.12);"
-            />
-          </div>
-
-          <div>
-            <p class="eyebrow">Resume</p>
-            <h1>Resume and quick contact links</h1>
-            <h2>Raquel Dillon</h2>
-            <p class="meta">Senior QA Lead | Business Analysis Support | SIT | UAT | Integration Testing</p>
-            <p>
-              Senior QA Lead focused on enterprise QA delivery, business workflow support,
-              requirements traceability, API and SQL validation, and release readiness.
-            </p>
-            <p style="margin-top:14px;color:#5d6b7a;">
-              Use this page for a quick resume download, direct contact, and LinkedIn access.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume download card -->
+  <main class="container">
     <section class="section">
-      <div class="container">
-        <div class="card">
-          <h2>Download resume</h2>
-          <p>
-            Download the latest resume file below or use the contact links to connect directly.
-          </p>
+      <h1>Resume</h1>
+      <p class="lead">Download the full resume for detailed role descriptions, dates, and contact information.</p>
 
-          <div class="button-row">
-            <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>
-              Download Resume (.docx)
-            </a>
-            <a class="btn btn-secondary" href="mailto:DillonQA@gmail.com">Email Raquel</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">View LinkedIn</a>
-          </div>
-
-          <div class="contact-box" style="margin-top:18px;">
-            <p><strong>Phone:</strong> 407-687-3306</p>
-            <p><strong>Email:</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">linkedin.com/in/raquel-dillon-b1bba695</a></p>
-          </div>
-        </div>
+      <div class="download-box">
+        <a class="btn" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume (DOCX)</a>
+        <a class="btn ghost" href="onepager.html">Open One-Pager</a>
       </div>
+
+      <h2>Quick resume snapshot</h2>
+      <ul class="compact-list">
+        <li><strong>Role focus</strong> Senior QA Lead, UAT, SIT, Integration, API testing, release readiness</li>
+        <li><strong>Industries</strong> Automotive; Government; Education; Financial services; Hospitality; Entertainment; Transportation; Digital media</li>
+        <li><strong>Tools</strong> Azure DevOps; Jira; Postman; BrowserStack; TestRail; SQL; SAP; HP ALM</li>
+      </ul>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>Raquel Dillon | Resume</p>
-      <p>
-        <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
+    <div class="container footer-inner">
+      <div>Raquel Dillon | Senior QA Lead</div>
+      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
