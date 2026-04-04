@@ -9,53 +9,52 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar" role="complementary">
-      <div class="profile">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="profile-photo">
-        <h1 class="profile-name">Raquel Dillon</h1>
-        <p class="profile-role">Senior QA Lead</p>
-      </div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Sidebar">
+      <div class="sidebar-inner">
+        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar" id="avatar">
+        <div class="name">Raquel Dillon</div>
+        <div class="role">Senior QA Lead</div>
 
-      <nav class="sidebar-nav" aria-label="Primary">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="summary.html" class="nav-link">Summary</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="resume.html" class="nav-link">Resume</a>
-        <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
-        <a href="bio.html" class="nav-link">Bio</a>
-        <a href="onepager.html" class="nav-link">One‑Pager</a>
-      </nav>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="summary.html" class="nav-link">Summary</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+          <a href="bio.html" class="nav-link">Bio</a>
+          <a href="onepager.html" class="nav-link">One‑Pager</a>
+        </nav>
 
-      <div class="contact-block">
-        <a class="contact-item" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-        <div class="contact-item">407‑687‑3306</div>
-        <a class="contact-item" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+        <div class="contact">
+          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
+          <div class="contact-text">407‑687‑3306</div>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        </div>
 
-      <div class="sidebar-foot">
-        <small>Senior QA • UAT • SIT • Integration</small>
+        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
       </div>
     </aside>
 
-    <main class="content" role="main">
-      <header class="page-header">
-        <div>
-          <h2 class="eyebrow">Senior QA Lead</h2>
-          <h1 class="page-title">SIT, UAT, Integration, API — Release Readiness</h1>
-          <p class="page-sub">Senior QA professional delivering release readiness, requirements traceability, and cross‑team validation for enterprise platforms across automotive, government, education, financial services, hospitality, and media.</p>
+    <div class="main">
+      <header class="main-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="header-left">
+          <div class="eyebrow">Senior QA Lead</div>
+          <h1 class="headline">SIT, UAT, Integration, API — Release Readiness</h1>
+          <p class="subhead">Senior QA professional delivering release readiness, requirements traceability, and cross‑team validation for enterprise platforms across automotive, government, education, financial services, hospitality, and media.</p>
         </div>
 
-        <div class="page-actions">
+        <div class="header-actions">
           <a class="btn primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
           <a class="btn outline" href="onepager.html">One‑Pager</a>
         </div>
       </header>
 
-      <section class="cards-grid">
+      <section class="grid">
         <article class="card">
-          <h3 class="card-title">Snapshot</h3>
-          <ul class="card-list">
+          <h2 class="card-title">Snapshot</h2>
+          <ul class="list">
             <li><strong>Target roles:</strong> Senior QA Lead; UAT Lead; SIT/Integration QA</li>
             <li><strong>Core strengths:</strong> Test planning, defect triage, stakeholder communication, backend validation (SQL/SAP)</li>
             <li><strong>Tools:</strong> Azure DevOps; Jira; Postman; BrowserStack; TestRail; SQL; SAP</li>
@@ -63,13 +62,13 @@
         </article>
 
         <article class="card">
-          <h3 class="card-title">Industries</h3>
+          <h2 class="card-title">Industries</h2>
           <p class="muted">Automotive; Government; Education; Financial services; Hospitality; Entertainment; Transportation; Digital media</p>
         </article>
 
         <article class="card">
-          <h3 class="card-title">Featured highlights</h3>
-          <ul class="card-list">
+          <h2 class="card-title">Featured highlights</h2>
+          <ul class="list">
             <li>Enterprise platform testing across multiple industries</li>
             <li>Requirements review and acceptance criteria support</li>
             <li>Release readiness coordination and defect follow‑through</li>
@@ -77,24 +76,32 @@
         </article>
       </section>
 
-      <section class="quick-links">
-        <h3 class="section-heading">Quick access</h3>
-        <div class="link-grid">
-          <a class="link-tile" href="experience.html"><strong>Experience</strong><span>Selected roles & responsibilities</span></a>
-          <a class="link-tile" href="summary.html"><strong>Summary</strong><span>Skills, tools & highlights</span></a>
-          <a class="link-tile" href="resume.html"><strong>Resume</strong><span>Download full resume</span></a>
-          <a class="link-tile" href="onepager.html"><strong>One‑Pager</strong><span>Condensed profile</span></a>
+      <section class="quick">
+        <h3 class="section-title">Quick access</h3>
+        <div class="tiles">
+          <a class="tile" href="experience.html"><strong>Experience</strong><span>Selected roles & responsibilities</span></a>
+          <a class="tile" href="summary.html"><strong>Summary</strong><span>Skills, tools & highlights</span></a>
+          <a class="tile" href="resume.html"><strong>Resume</strong><span>Download full resume</span></a>
+          <a class="tile" href="onepager.html"><strong>One‑Pager</strong><span>Condensed profile</span></a>
         </div>
       </section>
 
-      <footer class="page-footer">
-        <small>© <span id="year"></span> Raquel Dillon — Senior QA Lead</small>
+      <footer class="main-footer">
+        <div>© <span id="year"></span> Raquel Dillon — Senior QA Lead</div>
       </footer>
-    </main>
+    </div>
   </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Toggle sidebar on small screens
+    (function(){
+      var btn = document.getElementById('menuToggle');
+      var sidebar = document.getElementById('sidebar');
+      btn.addEventListener('click', function(){
+        sidebar.classList.toggle('open');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
   </script>
 </body>
 </html>
