@@ -9,14 +9,15 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Home">
         <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
         <div class="brand-text">
           <div class="name">Raquel Dillon</div>
           <div class="role">Senior QA Lead</div>
         </div>
       </a>
-      <nav class="main-nav">
+
+      <nav class="main-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="summary.html">Summary</a>
         <a href="experience.html">Experience</a>
@@ -25,65 +26,74 @@
         <a href="bio.html">Bio</a>
         <a href="onepager.html">One-Pager</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleNav(this)">Menu</button>
     </div>
   </header>
 
   <main class="container">
     <section class="section">
-      <h1>30 / 60 / 90 / 120 Plan</h1>
-      <p class="lead">High-level plan to accelerate value in a Senior QA Lead role. This page provides a recruiter-friendly outline of priorities and deliverables for early months on the job.</p>
+      <h1 class="section-title">30 / 60 / 90 / 120 Plan</h1>
+      <p class="lead">High‑level plan to accelerate value in a Senior QA Lead role. Priorities and deliverables for the first four months.</p>
 
       <div class="plan-grid">
         <div class="plan-card">
           <h3>First 30 days</h3>
-          <ul>
-            <li>Understand product scope, release cadence, and key stakeholders</li>
-            <li>Review existing test artifacts, environments, and defect workflows</li>
-            <li>Establish communication cadence for QA status and triage</li>
+          <ul class="compact-list">
+            <li>Understand product scope, release cadence, and stakeholders</li>
+            <li>Review test artifacts, environments, and defect workflows</li>
+            <li>Establish QA communication and triage cadence</li>
           </ul>
         </div>
 
         <div class="plan-card">
           <h3>30–60 days</h3>
-          <ul>
+          <ul class="compact-list">
             <li>Refine test plans and acceptance criteria with BA and product teams</li>
-            <li>Implement traceability between requirements and test coverage</li>
+            <li>Implement traceability between requirements and tests</li>
             <li>Identify quick wins to reduce release risk</li>
           </ul>
         </div>
 
         <div class="plan-card">
           <h3>60–90 days</h3>
-          <ul>
+          <ul class="compact-list">
             <li>Stabilize regression and UAT processes and reporting</li>
-            <li>Coordinate cross-team SIT and integration validation</li>
-            <li>Deliver measurable improvements to defect turnaround and release readiness</li>
+            <li>Coordinate cross‑team SIT and integration validation</li>
+            <li>Improve defect turnaround and release readiness metrics</li>
           </ul>
         </div>
 
         <div class="plan-card">
           <h3>90–120 days</h3>
-          <ul>
-            <li>Embed QA metrics into release decision-making</li>
+          <ul class="compact-list">
+            <li>Embed QA metrics into release decision‑making</li>
             <li>Document repeatable QA processes and handoffs</li>
-            <li>Plan for longer-term automation and monitoring improvements</li>
+            <li>Plan longer‑term automation and monitoring improvements</li>
           </ul>
         </div>
       </div>
 
       <div class="cta-row">
-        <a class="btn" href="resume.html">Download Resume</a>
-        <a class="btn ghost" href="onepager.html">Open One-Pager</a>
+        <a class="btn btn-primary" href="resume.html">Download Resume</a>
+        <a class="btn btn-outline" href="onepager.html">Open One‑Pager</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>Raquel Dillon | Senior QA Lead</div>
-      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
+      <div class="footer-left">© <span id="year5"></span> Raquel Dillon</div>
+      <div class="footer-right"><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> · <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
+
+  <script>
+    function toggleNav(btn){
+      var open = document.body.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    document.getElementById('year5').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
