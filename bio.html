@@ -1,26 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bio | Raquel Dillon</title>
-  <meta
-    name="description"
-    content="Professional bio for Raquel Dillon, Senior QA Lead with business analysis support experience."
-  />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bio — Raquel Dillon</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / top navigation -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="index.html">Raquel Dillon</a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-        ☰
-      </button>
-
-      <nav class="site-nav" id="siteNav">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
+        <div class="brand-text">
+          <div class="name">Raquel Dillon</div>
+          <div class="role">Senior QA Lead</div>
+        </div>
+      </a>
+      <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="summary.html">Summary</a>
         <a href="experience.html">Experience</a>
@@ -29,112 +25,34 @@
         <a href="bio.html" class="active">Bio</a>
         <a href="onepager.html">One-Pager</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
     </div>
   </header>
 
-  <main class="page-main">
-    <!-- Page intro -->
-    <section class="page-hero">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:center;">
-          <!-- Replace profile.jpg with your actual photo file name if needed -->
-          <div>
-            <img
-              src="profile.jpg"
-              alt="Professional photo of Raquel Dillon"
-              style="width:180px;height:180px;object-fit:cover;border-radius:18px;border:4px solid #fff;box-shadow:0 10px 24px rgba(20,58,99,0.12);"
-            />
-          </div>
-
-          <div>
-            <p class="eyebrow">Full Professional Bio</p>
-            <h1>A clear career story built around QA leadership and business workflow support</h1>
-            <p class="hero-text narrow">
-              Senior QA Lead with experience connecting requirements, validation, stakeholder alignment,
-              and release readiness across enterprise platforms.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bio content -->
+  <main class="container">
     <section class="section">
-      <div class="container">
-        <div class="card long-copy">
-          <h2>Executive summary</h2>
-          <p>
-            Raquel Dillon is a Senior QA professional with experience supporting enterprise platforms
-            across automotive, government, hospitality, education, financial services, and digital media.
-            Her background combines QA leadership with business analysis support, which allows her to work
-            across both validation execution and the business context behind it.
-          </p>
+      <h1>Bio</h1>
+      <p class="lead">Senior QA Lead with extensive experience delivering QA across enterprise systems. Skilled at aligning QA activities with business goals, clarifying requirements, and ensuring release readiness through evidence-based validation.</p>
 
-          <h2>How she works</h2>
-          <p>
-            Throughout her career, she has worked closely with business, product, and development teams
-            to review requirements, clarify workflows, support acceptance criteria, maintain requirements
-            traceability, and align testing to business needs. Her work is grounded in practical delivery,
-            not just documentation. That includes test planning, SIT, UAT, integration testing, API testing,
-            ETL testing, SQL validation, data reconciliation, defect management, and release readiness support.
-          </p>
+      <h2>Professional approach</h2>
+      <ul class="compact-list">
+        <li>Collaborative stakeholder engagement to define success criteria and acceptance tests</li>
+        <li>Traceability from requirements to test coverage to ensure gaps are visible and addressed</li>
+        <li>Hands-on validation across UI, API, ETL, and backend data workflows</li>
+      </ul>
 
-          <h2>Selected experience</h2>
-          <p>
-            At General Motors, she supported dealer application rollout efforts by onboarding dealers and
-            vendors, reviewing requirements to confirm scope and testability, and leading UAT, integration,
-            and API testing across dealer and B2B vendor platforms. Her work also included backend SQL and
-            SAP HANA validation, ETL-related testing, and issue investigation using logs, monitoring tools,
-            and evidence capture.
-          </p>
-
-          <p>
-            At Civix, she supported large-scale SaaS platforms used by government agencies, where she served
-            as Scrum QA Lead and helped teams move work forward through regression tracking, requirements review,
-            accessibility testing, traceability support, QA dashboards, and post-deployment validation.
-          </p>
-
-          <p>
-            Her Walt Disney World experience spans both a Senior QA / BA Lead contract role and a long-term
-            Senior Tech Specialist role. Across those roles, she supported pricing and analytics validation,
-            ETL testing, reporting checks, SQL-based data review, requirements coverage analysis, and enterprise
-            QA delivery for systems supporting parks, hotels, transportation, cruise, finance, HR, and resort
-            operations.
-          </p>
-
-          <p>
-            In education and financial services, she led UAT coordination, ERP modernization support, SIT,
-            workflow validation, reconciliation checks, accessibility checks, and defect lifecycle management
-            using tools such as Jira, Azure DevOps, Postman, SoapUI, BrowserStack, HP ALM/Quality Center,
-            and SQL-based validation environments.
-          </p>
-
-          <h2>Best-fit role environment</h2>
-          <p>
-            Her value in QA Lead, Senior QA, UAT, SIT, and Integration Testing roles comes from connecting
-            requirements, validation, evidence, and release decisions in a practical way.
-          </p>
-
-          <p>
-            She is best positioned in teams that need strong QA leadership, hands-on validation depth,
-            clear requirements support, traceability discipline, and reliable release readiness coordination.
-          </p>
-        </div>
+      <div class="cta-row">
+        <a class="btn" href="resume.html">Download Resume</a>
+        <a class="btn ghost" href="onepager.html">Open One-Pager</a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>Raquel Dillon | Bio</p>
-      <p>
-        <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
+    <div class="container footer-inner">
+      <div>Raquel Dillon | Senior QA Lead</div>
+      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
