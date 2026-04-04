@@ -3,75 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>One-Pager — Raquel Dillon</title>
+  <title>One‑Pager — Raquel Dillon</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Home">
         <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
         <div class="brand-text">
           <div class="name">Raquel Dillon</div>
           <div class="role">Senior QA Lead</div>
         </div>
       </a>
-      <nav class="main-nav">
+
+      <nav class="main-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="summary.html">Summary</a>
         <a href="experience.html">Experience</a>
         <a href="resume.html">Resume</a>
         <a href="valueplan.html">Value Plan</a>
         <a href="bio.html">Bio</a>
-        <a href="onepager.html" class="active">One-Pager</a>
+        <a href="onepager.html" class="active">One‑Pager</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleNav(this)">Menu</button>
     </div>
   </header>
 
   <main class="container">
     <section class="onepager">
-      <h1>One-Pager</h1>
+      <h1 class="section-title">One‑Pager</h1>
       <p class="lead">Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.</p>
 
       <div class="onepager-grid">
-        <div>
+        <div class="card">
           <h3>Who I am</h3>
-          <p>Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms.</p>
+          <p class="muted">Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms.</p>
         </div>
 
-        <div>
-          <h3>Best-fit roles</h3>
-          <p>Senior QA Lead; Senior QA; UAT Lead; SIT Lead; Integration QA with BA responsibilities</p>
+        <div class="card">
+          <h3>Best‑fit roles</h3>
+          <p class="muted">Senior QA Lead; Senior QA; UAT Lead; SIT Lead; Integration QA with BA responsibilities</p>
         </div>
 
-        <div>
+        <div class="card">
           <h3>Top strengths</h3>
           <ul class="compact-list">
             <li>Test planning and execution oversight</li>
             <li>Requirements traceability and acceptance criteria</li>
             <li>Backend validation using SQL and SAP HANA</li>
-            <li>Cross-team coordination for release readiness</li>
+            <li>Cross‑team coordination for release readiness</li>
           </ul>
         </div>
 
-        <div>
+        <div class="card">
           <h3>Contact</h3>
-          <p><strong>Email</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a><br><strong>Phone</strong> 407-687-3306<br><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">raquel-dillon</a></p>
+          <p class="muted"><strong>Email</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a><br><strong>Phone</strong> 407‑687‑3306<br><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">raquel-dillon</a></p>
         </div>
       </div>
 
       <div class="cta-row">
-        <a class="btn" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
+        <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>Raquel Dillon | Senior QA Lead</div>
-      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
+      <div class="footer-left">© <span id="year7"></span> Raquel Dillon</div>
+      <div class="footer-right"><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> · <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
+
+  <script>
+    function toggleNav(btn){
+      var open = document.body.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    document.getElementById('year7').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
