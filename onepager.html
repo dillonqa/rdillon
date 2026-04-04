@@ -9,78 +9,85 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar" role="complementary">
-      <div class="profile">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="profile-photo">
-        <h1 class="profile-name">Raquel Dillon</h1>
-        <p class="profile-role">Senior QA Lead</p>
-      </div>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar">
+        <div class="name">Raquel Dillon</div>
+        <div class="role">Senior QA Lead</div>
 
-      <nav class="sidebar-nav" aria-label="Primary">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="summary.html" class="nav-link">Summary</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="resume.html" class="nav-link">Resume</a>
-        <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
-        <a href="bio.html" class="nav-link">Bio</a>
-        <a href="onepager.html" class="nav-link active">One‑Pager</a>
-      </nav>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="summary.html" class="nav-link">Summary</a>
+          <a href="experience.html" class="nav-link">Experience</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+          <a href="bio.html" class="nav-link">Bio</a>
+          <a href="onepager.html" class="nav-link active">One‑Pager</a>
+        </nav>
 
-      <div class="contact-block">
-        <a class="contact-item" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-        <div class="contact-item">407‑687‑3306</div>
-        <a class="contact-item" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+        <div class="contact">
+          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
+          <div class="contact-text">407‑687‑3306</div>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+        </div>
 
-      <div class="sidebar-foot">
-        <small>Senior QA • UAT • SIT • Integration</small>
+        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
       </div>
     </aside>
 
-    <main class="content" role="main">
-      <header class="page-header">
-        <h1 class="page-title">One‑Pager</h1>
-        <p class="page-sub">Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.</p>
+    <div class="main">
+      <header class="main-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="header-left">
+          <h1 class="headline">One‑Pager</h1>
+          <p class="subhead">Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.</p>
+        </div>
+        <div class="header-actions">
+          <a class="btn primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
+        </div>
       </header>
 
       <section class="onepager-grid">
-        <div class="card">
+        <article class="card">
           <h3 class="card-title">Who I am</h3>
           <p class="muted">Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms.</p>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3 class="card-title">Best‑fit roles</h3>
           <p class="muted">Senior QA Lead; Senior QA; UAT Lead; SIT Lead; Integration QA with BA responsibilities</p>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3 class="card-title">Top strengths</h3>
-          <ul class="card-list">
+          <ul class="list">
             <li>Test planning and execution oversight</li>
             <li>Requirements traceability and acceptance criteria</li>
             <li>Backend validation using SQL and SAP HANA</li>
             <li>Cross‑team coordination for release readiness</li>
           </ul>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3 class="card-title">Contact</h3>
           <p class="muted"><strong>Email</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a><br><strong>Phone</strong> 407‑687‑3306<br><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">raquel-dillon</a></p>
-        </div>
+        </article>
       </section>
 
-      <div class="cta-row">
-        <a class="btn primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
-      </div>
-
-      <footer class="page-footer">
-        <small>© <span id="year-one"></span> Raquel Dillon</small>
+      <footer class="main-footer">
+        <div>© <span id="year"></span> Raquel Dillon</div>
       </footer>
-    </main>
+    </div>
   </div>
 
-  <script>document.getElementById('year-one').textContent = new Date().getFullYear();</script>
+  <script>
+    (function(){
+      var btn = document.getElementById('menuToggle');
+      var sidebar = document.getElementById('sidebar');
+      btn && btn.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
