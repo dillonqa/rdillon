@@ -9,14 +9,15 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Home">
         <img src="profile.jpg" alt="Raquel Dillon" class="avatar">
         <div class="brand-text">
           <div class="name">Raquel Dillon</div>
           <div class="role">Senior QA Lead</div>
         </div>
       </a>
-      <nav class="main-nav">
+
+      <nav class="main-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="summary.html" class="active">Summary</a>
         <a href="experience.html">Experience</a>
@@ -25,57 +26,64 @@
         <a href="bio.html">Bio</a>
         <a href="onepager.html">One-Pager</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleNav(this)">Menu</button>
     </div>
   </header>
 
   <main class="container">
     <section class="section">
-      <h1>Professional summary</h1>
-      <p class="lead">Senior QA Lead supporting SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms. Experienced in QA leadership, requirements traceability, and hands-on validation across complex systems.</p>
+      <h1 class="section-title">Professional summary</h1>
+      <p class="lead">Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness for enterprise platforms. Skilled at aligning QA activities with business goals and ensuring traceable acceptance criteria.</p>
 
       <div class="two-col">
         <div>
-          <h2>What I bring</h2>
+          <h2 class="subhead">What I bring</h2>
           <ul class="compact-list">
-            <li><strong>QA leadership</strong> — Test planning, execution oversight, defect triage, stakeholder communication, release readiness</li>
-            <li><strong>Business analysis support</strong> — Requirements clarification, acceptance criteria, stakeholder reviews, traceability</li>
-            <li><strong>Hands-on validation</strong> — SIT, UAT, integration testing, API testing, ETL, SQL validation, data reconciliation</li>
+            <li><strong>QA leadership</strong> — Test planning, defect triage, stakeholder communication, release readiness</li>
+            <li><strong>BA collaboration</strong> — Requirements clarification, acceptance criteria, traceability</li>
+            <li><strong>Hands‑on validation</strong> — API testing, ETL/SQL verification, integration and regression testing</li>
           </ul>
         </div>
 
         <div>
-          <h2>Tools and systems</h2>
+          <h2 class="subhead">Tools & systems</h2>
           <ul class="compact-list">
-            <li>Azure DevOps; Jira; Confluence</li>
-            <li>Postman; SoapUI; Insomnia</li>
-            <li>BrowserStack; TestRail; HP ALM/Quality Center</li>
-            <li>SAP ERP; SAP HANA; Workday; Salesforce; PeopleSoft</li>
+            <li>Azure DevOps; Jira; Confluence; TestRail</li>
+            <li>Postman; SoapUI; BrowserStack</li>
+            <li>SAP ERP; SAP HANA; Salesforce; PeopleSoft</li>
             <li>SQL; Oracle; Microsoft SQL Server</li>
           </ul>
         </div>
       </div>
 
-      <h2>Featured highlights</h2>
+      <h2 class="subhead">Featured highlights</h2>
       <ul class="compact-list">
         <li>Enterprise platform testing across multiple industries</li>
-        <li>Requirements review and workflow validation</li>
-        <li>Acceptance criteria support and traceability</li>
-        <li>Release readiness coordination and defect follow-through</li>
+        <li>Requirements review and acceptance criteria support</li>
+        <li>Release readiness coordination and defect follow‑through</li>
       </ul>
 
       <div class="cta-row">
-        <a class="btn" href="resume.html">View Resume</a>
-        <a class="btn ghost" href="onepager.html">Open One-Pager</a>
+        <a class="btn btn-primary" href="resume.html">View Resume</a>
+        <a class="btn btn-outline" href="onepager.html">Open One‑Pager</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>Raquel Dillon | Senior QA Lead</div>
-      <div><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> | <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
+      <div class="footer-left">© <span id="year2"></span> Raquel Dillon</div>
+      <div class="footer-right"><a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a> · <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">LinkedIn</a></div>
     </div>
   </footer>
+
+  <script>
+    function toggleNav(btn){
+      var open = document.body.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
