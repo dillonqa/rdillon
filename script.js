@@ -1,5 +1,5 @@
-// Simple mobile menu script
-// This makes the menu open and close on smaller screens
+// script.js
+// Simple mobile navigation toggle for small screens
 
 const menuToggle = document.getElementById("menuToggle");
 const siteNav = document.getElementById("siteNav");
