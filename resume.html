@@ -1,78 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Resume — Raquel Dillon</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Resume — Raquel Dillon, Senior QA Lead</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-inner">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar">
-        <div class="name">Raquel Dillon</div>
-        <div class="role">Senior QA Lead</div>
-
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="summary.html" class="nav-link">Summary</a>
-          <a href="experience.html" class="nav-link">Experience</a>
-          <a href="resume.html" class="nav-link active">Resume</a>
-          <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
-          <a href="bio.html" class="nav-link">Bio</a>
-          <a href="onepager.html" class="nav-link">One‑Pager</a>
-        </nav>
-
-        <div class="contact">
-          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
-          <div class="contact-text">407‑687‑3306</div>
-          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
-        </div>
-
-        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="profile.jpg" alt="Raquel Dillon headshot" class="brand-avatar">
+      <div>
+        <div class="brand-name">Raquel Dillon</div>
+        <div class="brand-role">Senior QA Lead · UAT · SIT · Integration</div>
       </div>
-    </aside>
-
-    <div class="main">
-      <header class="main-header">
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
-        <div class="header-left">
-          <h1 class="headline">Resume</h1>
-          <p class="subhead">Download the full resume for detailed role descriptions, dates, and contact information.</p>
-        </div>
-        <div class="header-actions">
-          <a class="btn primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume (DOCX)</a>
-          <a class="btn outline" href="onepager.html">One‑Pager</a>
-        </div>
-      </header>
-
-      <section class="grid">
-        <article class="card">
-          <h2 class="card-title">Quick resume snapshot</h2>
-          <ul class="list">
-            <li><strong>Role focus:</strong> Senior QA Lead — UAT, SIT, Integration, API testing, release readiness</li>
-            <li><strong>Industries:</strong> Automotive; Government; Education; Financial services; Hospitality; Entertainment; Transportation; Digital media</li>
-            <li><strong>Tools:</strong> Azure DevOps; Jira; Postman; BrowserStack; TestRail; SQL; SAP; HP ALM</li>
-          </ul>
-        </article>
-      </section>
-
-      <footer class="main-footer">
-        <div>© <span id="year"></span> Raquel Dillon</div>
-      </footer>
+    </div>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="siteNav" class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="summary.html" class="nav-link">Summary</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="resume.html" class="nav-link active">Resume</a>
+      <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+      <a href="bio.html" class="nav-link">Bio</a>
+      <a href="onepager.html" class="nav-link">One‑Pager</a>
+    </nav>
+    <div class="header-contact">
+      <a href="mailto:DillonQA@gmail.com" class="header-contact-link">DillonQA@gmail.com</a>
+      <span class="header-contact-text">407‑687‑3306</span>
+      <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" class="header-contact-link" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
+</header>
 
-  <script>
-    (function(){
-      var btn = document.getElementById('menuToggle');
-      var sidebar = document.getElementById('sidebar');
-      btn && btn.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
-      document.getElementById('year').textContent = new Date().getFullYear();
-    })();
-  </script>
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">Resume</p>
+    <h1 class="hero-title">Senior QA Lead — Resume</h1>
+    <p class="hero-subtitle">
+      Download the full resume for detailed role descriptions, dates, and contact information.
+    </p>
+    <div class="hero-ctas">
+      <a href="Raquel_Dillon_QA_Lead_Resume_2026.docx" class="btn primary">Download Resume (DOCX)</a>
+      <a href="onepager.html" class="btn outline">View One‑Pager</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Quick resume snapshot</h2>
+    <div class="card">
+      <h3 class="card-subtitle">Role focus</h3>
+      <p class="card-body">
+        Senior QA Lead — UAT, SIT, Integration, API testing, release readiness.
+      </p>
+      <h3 class="card-subtitle">Industries</h3>
+      <p class="card-body">
+        Automotive; Government; Education; Financial services; Hospitality; Entertainment; Transportation; Digital media.
+      </p>
+      <h3 class="card-subtitle">Tools</h3>
+      <p class="card-body">
+        Azure DevOps; Jira; Postman; BrowserStack; TestRail; SQL; SAP; HP ALM.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © 2026 Raquel Dillon — Senior QA Lead
+  </footer>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
