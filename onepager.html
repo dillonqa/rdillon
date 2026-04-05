@@ -1,93 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>One‑Pager — Raquel Dillon</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>One‑Pager — Raquel Dillon, Senior QA Lead</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-inner">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar">
-        <div class="name">Raquel Dillon</div>
-        <div class="role">Senior QA Lead</div>
-
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="summary.html" class="nav-link">Summary</a>
-          <a href="experience.html" class="nav-link">Experience</a>
-          <a href="resume.html" class="nav-link">Resume</a>
-          <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
-          <a href="bio.html" class="nav-link">Bio</a>
-          <a href="onepager.html" class="nav-link active">One‑Pager</a>
-        </nav>
-
-        <div class="contact">
-          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
-          <div class="contact-text">407‑687‑3306</div>
-          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
-        </div>
-
-        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="profile.jpg" alt="Raquel Dillon headshot" class="brand-avatar">
+      <div>
+        <div class="brand-name">Raquel Dillon</div>
+        <div class="brand-role">Senior QA Lead · UAT · SIT · Integration</div>
       </div>
-    </aside>
-
-    <div class="main">
-      <header class="main-header">
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
-        <div class="header-left">
-          <h1 class="headline">One‑Pager</h1>
-          <p class="subhead">Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.</p>
-        </div>
-        <div class="header-actions">
-          <a class="btn primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume</a>
-        </div>
-      </header>
-
-      <section class="onepager-grid">
-        <article class="card">
-          <h3 class="card-title">Who I am</h3>
-          <p class="muted">Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms.</p>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title">Best‑fit roles</h3>
-          <p class="muted">Senior QA Lead; Senior QA; UAT Lead; SIT Lead; Integration QA with BA responsibilities</p>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title">Top strengths</h3>
-          <ul class="list">
-            <li>Test planning and execution oversight</li>
-            <li>Requirements traceability and acceptance criteria</li>
-            <li>Backend validation using SQL and SAP HANA</li>
-            <li>Cross‑team coordination for release readiness</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title">Contact</h3>
-          <p class="muted"><strong>Email</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a><br><strong>Phone</strong> 407‑687‑3306<br><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/">raquel-dillon</a></p>
-        </article>
-      </section>
-
-      <footer class="main-footer">
-        <div>© <span id="year"></span> Raquel Dillon</div>
-      </footer>
+    </div>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="siteNav" class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="summary.html" class="nav-link">Summary</a>
+      <a href="experience.html" class="nav-link">Experience</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+      <a href="bio.html" class="nav-link">Bio</a>
+      <a href="onepager.html" class="nav-link active">One‑Pager</a>
+    </nav>
+    <div class="header-contact">
+      <a href="mailto:DillonQA@gmail.com" class="header-contact-link">DillonQA@gmail.com</a>
+      <span class="header-contact-text">407‑687‑3306</span>
+      <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" class="header-contact-link" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
+</header>
 
-  <script>
-    (function(){
-      var btn = document.getElementById('menuToggle');
-      var sidebar = document.getElementById('sidebar');
-      btn && btn.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
-      document.getElementById('year').textContent = new Date().getFullYear();
-    })();
-  </script>
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">Executive one‑pager</p>
+    <h1 class="hero-title">Senior QA Lead — One‑Pager</h1>
+    <p class="hero-subtitle">
+      Condensed profile for recruiters and hiring managers. Quick view of role fit, strengths, and contact details.
+    </p>
+    <div class="hero-ctas">
+      <a href="Raquel_Dillon_QA_Lead_Resume_2026.docx" class="btn primary">Download Resume</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card-grid">
+      <article class="card">
+        <h2 class="card-title">Who I am</h2>
+        <p class="card-body">
+          Senior QA Lead focused on SIT, UAT, integration testing, API validation, and release readiness across enterprise platforms.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Best‑fit roles</h2>
+        <p class="card-body">
+          Senior QA Lead; Senior QA; UAT Lead; SIT Lead; Integration QA with BA responsibilities.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Top strengths</h2>
+        <ul class="card-list">
+          <li>Test planning and execution oversight.</li>
+          <li>Requirements traceability and acceptance criteria.</li>
+          <li>Backend validation using SQL and SAP HANA.</li>
+          <li>Cross‑team coordination for release readiness.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Contact</h2>
+        <p class="card-body">
+          <strong>Email</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a><br>
+          <strong>Phone</strong> 407‑687‑3306<br>
+          <strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">raquel-dillon</a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © 2026 Raquel Dillon — Senior QA Lead
+  </footer>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
