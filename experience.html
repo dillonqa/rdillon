@@ -1,129 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Experience — Raquel Dillon</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Selected Experience — Raquel Dillon, Senior QA Lead</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-inner">
-        <img src="profile.jpg" alt="Raquel Dillon headshot" class="avatar">
-        <div class="name">Raquel Dillon</div>
-        <div class="role">Senior QA Lead</div>
-
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="summary.html" class="nav-link">Summary</a>
-          <a href="experience.html" class="nav-link active">Experience</a>
-          <a href="resume.html" class="nav-link">Resume</a>
-          <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
-          <a href="bio.html" class="nav-link">Bio</a>
-          <a href="onepager.html" class="nav-link">One‑Pager</a>
-        </nav>
-
-        <div class="contact">
-          <a href="mailto:DillonQA@gmail.com" class="contact-link">DillonQA@gmail.com</a>
-          <div class="contact-text">407‑687‑3306</div>
-          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
-        </div>
-
-        <div class="sidebar-foot">Senior QA • UAT • SIT • Integration</div>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="profile.jpg" alt="Raquel Dillon headshot" class="brand-avatar">
+      <div>
+        <div class="brand-name">Raquel Dillon</div>
+        <div class="brand-role">Senior QA Lead · UAT · SIT · Integration</div>
       </div>
-    </aside>
-
-    <div class="main">
-      <header class="main-header">
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
-        <div class="header-left">
-          <h1 class="headline">Selected experience</h1>
-          <p class="subhead">Experience across automotive, government, hospitality, education, financial services, and digital media. Focused on QA leadership, traceability, and hands‑on validation.</p>
-        </div>
-        <div class="header-actions">
-          <a class="btn primary" href="resume.html">Download Full Resume</a>
-          <a class="btn outline" href="onepager.html">One‑Pager</a>
-        </div>
-      </header>
-
-      <section class="grid">
-        <article class="card">
-          <strong>Experience snapshot:</strong>
-          <p class="muted">Senior QA leadership across enterprise platforms; hands‑on with API, ETL, SQL, and release readiness.</p>
-        </article>
-
-        <article class="card role">
-          <h3 class="role-company">General Motors</h3>
-          <div class="role-meta">Dealer Sales Solution Testing Lead (Contract) — Remote — Aug 2022 – Jan 2025</div>
-          <ul class="list">
-            <li>Led UAT, integration testing, and API testing across dealer and B2B vendor platforms.</li>
-            <li>Onboarded dealers and vendors; reviewed requirements to confirm scope and testability.</li>
-            <li>Coordinated SIT/UAT across API, ETL, and SAP HANA workflows; executed backend validation using SQL.</li>
-            <li>Supported defect investigation using Azure Monitor, Log Analytics, Elasticsearch, HAR files, and ServiceNow.</li>
-          </ul>
-        </article>
-
-        <article class="card role">
-          <h3 class="role-company">Civix</h3>
-          <div class="role-meta">Senior QA Project Lead — Remote — Sept 2020 – Jun 2022</div>
-          <ul class="list">
-            <li>Supported large‑scale SaaS platforms for government agencies; coordinated validation across web and mobile.</li>
-            <li>Served as Scrum QA Lead; tracked regression and surfaced delivery risks.</li>
-            <li>Validated backend workflows with SQL and API testing; led accessibility testing and traceability efforts.</li>
-          </ul>
-        </article>
-
-        <article class="card role">
-          <h3 class="role-company">Walt Disney World</h3>
-          <div class="role-meta">Senior QA / BA Lead (Contract) — Orlando, FL — Oct 2019 – Apr 2020</div>
-          <ul class="list">
-            <li>Validated pricing logic and reporting accuracy with Revenue Management.</li>
-            <li>Maintained requirements traceability and QA deliverables from intake through fulfillment.</li>
-            <li>Executed ETL testing, data reconciliation, and Power BI dashboard validation using SQL and Excel.</li>
-          </ul>
-        </article>
-
-        <!-- Additional roles kept concise for scan value -->
-        <article class="card role">
-          <h3 class="role-company">Orange County Public Schools</h3>
-          <div class="role-meta">QA Lead / UAT Project Facilitator (Contract) — Orlando, FL — May 2019 – Oct 2019</div>
-          <ul class="list">
-            <li>Led test planning and UAT coordination for ERP modernization across PeopleSoft and Skyward.</li>
-            <li>Managed defect lifecycles in Jira and coordinated UAT sign‑offs with business teams.</li>
-          </ul>
-        </article>
-
-        <article class="card role">
-          <h3 class="role-company">Digicel PlayGo</h3>
-          <div class="role-meta">Senior QA Engineer / Business Project Lead — Miami, FL — May 2017 – May 2019</div>
-          <ul class="list">
-            <li>Executed mobile testing across iOS, Android, and set‑top box; validated streaming quality and e‑commerce flows.</li>
-            <li>Tracked defects in Jira and performed backend verification with SQL.</li>
-          </ul>
-        </article>
-
-        <div class="cta-row">
-          <a class="btn primary" href="resume.html">Download Full Resume</a>
-          <a class="btn outline" href="onepager.html">One‑Pager</a>
-        </div>
-      </section>
-
-      <footer class="main-footer">
-        <div>© <span id="year"></span> Raquel Dillon</div>
-      </footer>
+    </div>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="siteNav" class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="summary.html" class="nav-link">Summary</a>
+      <a href="experience.html" class="nav-link active">Experience</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="valueplan.html" class="nav-link">30/60/90 Plan</a>
+      <a href="bio.html" class="nav-link">Bio</a>
+      <a href="onepager.html" class="nav-link">One‑Pager</a>
+    </nav>
+    <div class="header-contact">
+      <a href="mailto:DillonQA@gmail.com" class="header-contact-link">DillonQA@gmail.com</a>
+      <span class="header-contact-text">407‑687‑3306</span>
+      <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" class="header-contact-link" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
+</header>
 
-  <script>
-    (function(){
-      var btn = document.getElementById('menuToggle');
-      var sidebar = document.getElementById('sidebar');
-      btn && btn.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
-      document.getElementById('year').textContent = new Date().getFullYear();
-    })();
-  </script>
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">Selected experience</p>
+    <h1 class="hero-title">Enterprise QA leadership across industries</h1>
+    <p class="hero-subtitle">
+      Experience across automotive, government, hospitality, education, financial services, and digital media.
+      Focused on QA leadership, traceability, and hands‑on validation.
+    </p>
+    <div class="hero-ctas">
+      <a href="Raquel_Dillon_QA_Lead_Resume_2026.docx" class="btn primary">Download Full Resume</a>
+      <a href="onepager.html" class="btn outline">View One‑Pager</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Experience snapshot</h2>
+    <div class="card">
+      <p class="card-body">
+        Senior QA leadership across enterprise platforms; hands‑on with API, ETL, SQL, and release readiness.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Roles</h2>
+
+    <article class="card role-card">
+      <header class="role-header">
+        <h3 class="card-title">General Motors — Dealer Sales Solution Testing Lead (Contract)</h3>
+        <p class="role-meta">Remote · Aug 2022 – Jan 2025</p>
+      </header>
+      <ul class="card-list">
+        <li>Led UAT, integration testing, and API testing across dealer and B2B vendor platforms.</li>
+        <li>Onboarded dealers and vendors; reviewed requirements to confirm scope and testability.</li>
+        <li>Coordinated SIT/UAT across API, ETL, and SAP HANA workflows; executed backend validation using SQL.</li>
+        <li>Supported defect investigation using Azure Monitor, Log Analytics, Elasticsearch, HAR files, and ServiceNow.</li>
+      </ul>
+    </article>
+
+    <article class="card role-card">
+      <header class="role-header">
+        <h3 class="card-title">Civix — Senior QA Project Lead</h3>
+        <p class="role-meta">Remote · Sept 2020 – Jun 2022</p>
+      </header>
+      <ul class="card-list">
+        <li>Supported large‑scale SaaS platforms for government agencies; coordinated validation across web and mobile.</li>
+        <li>Served as Scrum QA Lead; tracked regression and surfaced delivery risks.</li>
+        <li>Validated backend workflows with SQL and API testing; led accessibility testing and traceability efforts.</li>
+      </ul>
+    </article>
+
+    <article class="card role-card">
+      <header class="role-header">
+        <h3 class="card-title">Walt Disney World — Senior QA / BA Lead (Contract)</h3>
+        <p class="role-meta">Orlando, FL · Oct 2019 – Apr 2020</p>
+      </header>
+      <ul class="card-list">
+        <li>Validated pricing logic and reporting accuracy with Revenue Management.</li>
+        <li>Maintained requirements traceability and QA deliverables from intake through fulfillment.</li>
+        <li>Executed ETL testing, data reconciliation, and Power BI dashboard validation using SQL and Excel.</li>
+      </ul>
+    </article>
+
+    <article class="card role-card">
+      <header class="role-header">
+        <h3 class="card-title">Orange County Public Schools — QA Lead / UAT Project Facilitator (Contract)</h3>
+        <p class="role-meta">Orlando, FL · May 2019 – Oct 2019</p>
+      </header>
+      <ul class="card-list">
+        <li>Led test planning and UAT coordination for ERP modernization across PeopleSoft and Skyward.</li>
+        <li>Managed defect lifecycles in Jira and coordinated UAT sign‑offs with business teams.</li>
+      </ul>
+    </article>
+
+    <article class="card role-card">
+      <header class="role-header">
+        <h3 class="card-title">Digicel PlayGo — Senior QA Engineer / Business Project Lead</h3>
+        <p class="role-meta">Miami, FL · May 2017 – May 2019</p>
+      </header>
+      <ul class="card-list">
+        <li>Executed mobile testing across iOS, Android, and set‑top box; validated streaming quality and e‑commerce flows.</li>
+        <li>Tracked defects in Jira and performed backend verification with SQL.</li>
+      </ul>
+    </article>
+  </section>
+
+  <footer class="site-footer">
+    © 2026 Raquel Dillon — Senior QA Lead
+  </footer>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
