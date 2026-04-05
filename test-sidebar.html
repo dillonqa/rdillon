@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sidebar layout test — Raquel Dillon</title>
+  <style>
+    /* Self-contained CSS to test sidebar layout */
+    :root{
+      --sidebar-bg:#0f1724;
+      --accent:#0b5fff;
+      --muted:#6b7280;
+      --text:#0b1220;
+      --card:#fbfdff;
+      --border:rgba(11,17,32,0.06);
+      --radius:12px;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{background:#fff;color:var(--text);line-height:1.5}
+
+    .app {
+      display:grid;
+      grid-template-columns:280px 1fr;
+      min-height:100vh;
+      gap:0;
+      max-width:1400px;
+      margin:0 auto;
+      border-left:1px solid #eee;
+      border-right:1px solid #eee;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: linear-gradient(180deg,var(--sidebar-bg),#0b1220);
+      color:#fff;
+      padding:28px 18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      min-width:220px;
+      max-width:320px;
+      box-shadow: 0 2px 12px rgba(2,6,23,0.08);
+      position:relative;
+    }
+
+    .sidebar .avatar {
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid rgba(255,255,255,0.06);
+      display:block;
+      margin:0 auto;
+      max-height:40vh; /* prevents extremely tall images from overflowing */
+    }
+
+    .sidebar .name { text-align:center; font-weight:700; margin-top:8px; font-size:18px; font-family: "Merriweather", serif; }
+    .sidebar .role { text-align:center; color:rgba(255,255,255,0.85); font-size:13px; margin:0 0 8px 0; }
+
+    .nav { display:flex; flex-direction:column; gap:8px; margin-top:8px; padding:0 6px; }
+    .nav a { color:rgba(255,255,255,0.95); text-decoration:none; padding:10px 12px; border-radius:8px; font-weight:600; display:block; }
+    .nav a.active { background:rgba(255,255,255,0.06); }
+    .nav a:hover { background:rgba(255,255,255,0.04); }
+
+    .contact { margin-top:auto; text-align:center; color:rgba(255,255,255,0.95); font-size:14px; }
+    .contact a { color:inherit; text-decoration:none; display:block; margin-bottom:6px; }
+
+    /* Main content */
+    .main {
+      padding:36px 44px;
+      background:#fff;
+    }
+    .headline { font-size:28px; margin:0 0 8px 0; font-family:"Merriweather", serif; }
+    .sub { color:var(--muted); margin:0 0 18px 0; max-width:900px; }
+
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .card { background:var(--card); border-radius:12px; padding:16px; border:1px solid var(--border); }
+
+    /* Responsive safety: ensure sidebar remains visible on wide screens */
+    @media (max-width:980px){
+      .app { grid-template-columns:1fr; }
+      .sidebar { position:sticky; top:0; left:0; right:0; display:flex; flex-direction:row; align-items:center; gap:12px; padding:12px; }
+      .sidebar .avatar { width:56px; height:56px; border-radius:10px; max-height:56px; }
+      .nav { display:none; }
+      .contact { display:none; }
+    }
+
+    /* debug helper */
+    .debug { margin-top:12px; font-size:13px; color:#333; background:#f7f7f7; padding:10px; border-radius:8px; border:1px solid #eee; }
+  </style>
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar">
+      <!-- Inline SVG avatar ensures the test never fails due to missing profile.jpg -->
+      <img class="avatar" alt="Test avatar" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600"><rect width="100%" height="100%" fill="%230b1220"/><text x="50%" y="50%" font-size="120" fill="%23ffffff" font-family="Arial" text-anchor="middle" dominant-baseline="middle">RD</text></svg>'>
+      <div class="name">Raquel Dillon</div>
+      <div class="role">Senior QA Lead</div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-item active" href="#">Home</a>
+        <a class="nav-item" href="#">Summary</a>
+        <a class="nav-item" href="#">Experience</a>
+        <a class="nav-item" href="#">Resume</a>
+        <a class="nav-item" href="#">Plan</a>
+        <a class="nav-item" href="#">Bio</a>
+        <a class="nav-item" href="#">One‑Pager</a>
+      </nav>
+
+      <div class="contact">
+        <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
+        <div>407‑687‑3306</div>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </aside>
+
+    <main class="main" id="main">
+      <h1 class="headline">Sidebar layout test</h1>
+      <p class="sub">This page isolates the left sidebar and main content. On a regular desktop monitor the sidebar should appear on the left and remain visible. Resize the browser to confirm responsive behavior.</p>
+
+      <div class="cards">
+        <div class="card"><strong>Snapshot</strong><p style="margin:8px 0 0 0;color:#333">Target roles, core strengths, tools.</p></div>
+        <div class="card"><strong>Industries</strong><p style="margin:8px 0 0 0;color:#333">Automotive; Government; Education; Financial services; Hospitality; Media</p></div>
+        <div class="card"><strong>Highlights</strong><p style="margin:8px 0 0 0;color:#333">Requirements traceability, release readiness, API validation.</p></div>
+      </div>
+
+      <div class="debug" id="debug">
+        <div><strong>Debug info</strong></div>
+        <div id="viewport">Viewport: <span id="vw"></span> × <span id="vh"></span></div>
+        <div id="sidebarState">Sidebar visible: <span id="sv">unknown</span></div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // small script to show debug info
+    function updateDebug(){
+      document.getElementById('vw').textContent = window.innerWidth;
+      document.getElementById('vh').textContent = window.innerHeight;
+      var sidebar = document.getElementById('sidebar');
+      var sv = window.getComputedStyle(sidebar).display !== 'none';
+      document.getElementById('sv').textContent = sv ? 'yes' : 'no';
+    }
+    window.addEventListener('resize', updateDebug);
+    window.addEventListener('load', updateDebug);
+    updateDebug();
+  </script>
+</body>
+</html>
