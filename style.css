@@ -381,6 +381,12 @@ ul {
   color: var(--muted);
 }
 
+.lead-line {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--heading);
+}
+
 .experience-card {
   padding: 1.5rem;
 }
