@@ -4,124 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Raquel Dillon</title>
-  <meta name="description" content="Resume page and quick contact links for Raquel Dillon." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <meta name="description" content="Resume page for Raquel Dillon with role focus, industries, tools, and direct resume download access." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-name">Raquel Dillon</span>
-        <span class="brand-role">Senior QA Lead</span>
-      </a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="summary.html">Summary</a>
-        <a href="experience.html">Experience</a>
-        <a href="resume.html" class="active">Resume</a>
-        <a href="valueplan.html">Value Plan</a>
-        <a href="bio.html">Bio</a>
-        <a href="onepager.html">One-Pager</a>
-      </nav>
+<body data-page="resume">
+  <header class="mobile-topbar">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+    <div class="mobile-topbar-text">
+      <strong>Raquel Dillon</strong>
+      <span>Resume</span>
     </div>
   </header>
 
-  <main>
-    <section class="page-hero">
-      <div class="container narrow">
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Professional headshot of Raquel Dillon" class="profile-photo" />
+          <h1 class="profile-name">Raquel Dillon</h1>
+          <p class="profile-role">Senior QA Lead<br />UAT · SIT · Integration Testing · Business Analysis Support</p>
+          <div class="contact-list">
+            <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
+            <a href="tel:4076873306">407-687-3306</a>
+            <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="summary.html" data-nav="summary">Summary</a>
+          <a href="experience.html" data-nav="experience">Experience</a>
+          <a href="resume.html" data-nav="resume">Resume</a>
+          <a href="valueplan.html" data-nav="valueplan">Value Plan</a>
+          <a href="bio.html" data-nav="bio">Bio</a>
+          <a href="onepager.html" data-nav="onepager">One-Pager</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="page-hero">
         <p class="eyebrow">Resume</p>
-        <h1>Resume and quick contact links</h1>
-        <p class="lead">
-          Senior QA Lead focused on enterprise QA delivery, business workflow support, requirements traceability, API and SQL validation, and release readiness.
+        <h2>Senior QA Lead — Resume</h2>
+        <p class="hero-text">
+          Download the full resume for detailed role descriptions, dates, tools, and contact information.
+          This page also gives a fast recruiter snapshot.
         </p>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="split-grid">
-          <article class="panel">
-            <p class="section-label">Profile</p>
-            <h2>Raquel Dillon</h2>
-            <p class="role-line">Senior QA Lead | Business Analysis Support | SIT | UAT | Integration Testing</p>
-
-            <div class="stack-sm">
-              <!-- IMPORTANT: Update this file name if your actual resume file name in GitHub is different -->
-              <a class="btn btn-primary full" href="Raquel_Dillon_QA_Lead_Resume_2026.docx">Download Resume (.docx)</a>
-              <a class="btn btn-secondary full" href="mailto:DillonQA@gmail.com">Email Raquel</a>
-              <a class="btn btn-secondary full" href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">View LinkedIn</a>
-            </div>
-          </article>
-
-          <article class="panel">
-            <p class="section-label">Quick contact</p>
-            <h2>Contact details</h2>
-            <ul class="detail-list">
-              <li><strong>Phone:</strong> 407-687-3306</li>
-              <li><strong>Email:</strong> <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">linkedin.com/in/raquel-dillon-b1bba695</a></li>
-            </ul>
-          </article>
+        <div class="button-row">
+          <!-- Update file name here only if your exact GitHub file name is different -->
+          <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume (DOCX)</a>
+          <a class="btn btn-secondary" href="onepager.html">View One-Pager</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="card-grid three-up">
-          <article class="info-card">
-            <h3>Target role fit</h3>
-            <p>Senior QA Lead, Senior QA, UAT, SIT, Integration Testing, and business workflow support roles.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Hands-on focus</h3>
-            <p>API testing, SQL validation, ETL testing, data reconciliation, defect investigation, and release readiness support.</p>
-          </article>
-
-          <article class="info-card">
-            <h3>Strength areas</h3>
-            <p>Requirements clarification, traceability, stakeholder alignment, QA delivery rhythm, and enterprise validation coverage.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container narrow">
-        <article class="panel readable">
-          <p class="section-label">Resume note</p>
-          <h2>One fix to make before publishing</h2>
-          <p>
-            The live resume download button currently points to a missing file. If you use the download button in this page, make sure the resume file in your GitHub repo matches the exact file name in the link above.
-          </p>
+      <section class="content-grid two-col">
+        <article class="content-card">
+          <h3>Role focus</h3>
+          <p>Senior QA Lead · UAT · SIT · Integration Testing · API Testing · SQL Validation · Release Readiness · Business Analysis Support</p>
         </article>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Raquel Dillon</strong>
-        <span>Resume</span>
-      </div>
-      <div class="footer-links">
-        <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-        <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
+        <article class="content-card">
+          <h3>Industries</h3>
+          <p>Automotive · Government · Education · Financial Services · Hospitality · Entertainment · Transportation · Digital Media</p>
+        </article>
+      </section>
+
+      <section class="content-grid two-col">
+        <article class="content-card">
+          <h3>Core tools</h3>
+          <p>Azure DevOps · Jira · Confluence · TestRail · Postman · SoapUI · Insomnia · BrowserStack · HP ALM / Quality Center · SQL · SAP</p>
+        </article>
+
+        <article class="content-card">
+          <h3>Platform exposure</h3>
+          <p>SAP ERP · SAP HANA · SAP HR · SAP SuccessFactors · Oracle Fusion Cloud · Workday · Salesforce · PeopleSoft · Microsoft Dynamics 365 · Skyward SIS</p>
+        </article>
+      </section>
+
+      <section class="content-card">
+        <div class="section-heading">
+          <p class="eyebrow">Quick resume snapshot</p>
+          <h3>What the full resume covers</h3>
+        </div>
+
+        <ul class="clean-list">
+          <li>QA leadership and delivery across enterprise platforms</li>
+          <li>Requirements clarification, acceptance criteria support, and traceability</li>
+          <li>Hands-on validation in API, ETL, SQL, data reconciliation, and backend workflows</li>
+          <li>Cross-functional coordination across product, business, development, and release teams</li>
+          <li>Experience spanning automotive, government, hospitality, education, financial services, and media</li>
+        </ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>© 2026 Raquel Dillon — Senior QA Lead</p>
+      </footer>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
