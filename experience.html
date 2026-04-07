@@ -4,73 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience | Raquel Dillon</title>
-  <meta name="description" content="Selected experience for Raquel Dillon across QA leadership, UAT, SIT, integration testing, SQL validation, API testing, and release readiness." />
+  <meta name="description" content="Experience page for Raquel Dillon featuring QA leadership, UAT, SIT, integration testing, and business analysis support across enterprise environments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body data-page="experience">
-  <header class="mobile-topbar">
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
-    <div class="mobile-topbar-text">
-      <strong>Raquel Dillon</strong>
-      <span>Experience</span>
-    </div>
-  </header>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
 
-  <div class="site-shell">
+  <div class="page-shell">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-inner">
-        <div class="profile-card">
-          <img src="profile.jpg" alt="Professional headshot of Raquel Dillon" class="profile-photo" />
-          <h1 class="profile-name">Raquel Dillon</h1>
-          <p class="profile-role">
-            Senior QA Lead<br />
-            UAT · SIT · Integration Testing · Business Analysis Support
-          </p>
-
-          <div class="contact-list">
-            <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-            <a href="tel:4076873306">407-687-3306</a>
-            <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
+        <div class="profile-wrap">
+          <img class="profile-photo" src="https://dillonqa.github.io/rdillon/assets/profile.jpg" alt="Professional headshot of Raquel Dillon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="profile-photo-fallback" style="display:none;">RD</div>
+          <h1>Raquel Dillon</h1>
+          <p class="sidebar-role">Senior QA Lead</p>
+          <p class="sidebar-focus">UAT · SIT · Integration Testing · Business Analysis Support</p>
         </div>
 
-        <nav class="sidebar-nav" aria-label="Main navigation">
+        <div class="sidebar-contact">
+          <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
+          <a href="tel:14076873306">407-687-3306</a>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Primary navigation">
           <a href="index.html" data-nav="home">Home</a>
-          <a href="overview.html" data-nav="overview">Overview</a>
           <a href="experience.html" data-nav="experience">Experience</a>
           <a href="resume.html" data-nav="resume">Resume</a>
           <a href="valueplan.html" data-nav="valueplan">Value Plan</a>
           <a href="contact.html" data-nav="contact">Contact</a>
         </nav>
-
-        <div class="sidebar-footer">
-          <p class="sidebar-note">Experience organized for fast recruiter scanning and stronger role-fit proof.</p>
-        </div>
       </div>
     </aside>
 
     <main class="main-content">
-      <section class="page-hero">
-        <div class="hero-copy hero-copy-wide">
-          <p class="eyebrow">Selected Experience</p>
-          <h2>Enterprise QA leadership across multiple industries and platforms.</h2>
-          <p class="hero-text">
-            Experience across automotive, government, hospitality, education, financial services, and digital media,
-            with a focus on QA leadership, traceability, hands-on validation, and release readiness.
-          </p>
-
-          <div class="button-row">
-            <a class="btn btn-primary" href="overview.html">View Overview</a>
-            <a class="btn btn-secondary" href="contact.html">Contact</a>
-          </div>
-        </div>
+      <section class="hero hero-compact">
+        <p class="eyebrow">Experience</p>
+        <h2>Enterprise QA leadership across multiple industries and platforms.</h2>
+        <p class="hero-text">
+          Experience across automotive, government, hospitality, education, financial services, and digital media,
+          with a focus on QA leadership, traceability, hands-on validation, and release readiness.
+        </p>
       </section>
 
-      <section class="content-grid two-col">
-        <article class="content-card">
-          <p class="eyebrow">Experience Themes</p>
-          <h3>What shows up consistently</h3>
-          <ul class="clean-list">
+      <section class="grid grid-2">
+        <article class="card">
+          <h3>Core Themes</h3>
+          <ul class="standard-list">
             <li>QA leadership across enterprise systems</li>
             <li>Requirements clarification and traceability support</li>
             <li>API, ETL, SQL, and backend validation</li>
@@ -78,26 +63,22 @@
           </ul>
         </article>
 
-        <article class="content-card">
-          <p class="eyebrow">Industry Coverage</p>
-          <h3>Enterprise environments supported</h3>
+        <article class="card">
+          <h3>Industry Coverage</h3>
           <p>Automotive · Government · Hospitality · Education · Financial Services · Digital Media · Transportation</p>
         </article>
       </section>
 
-      <section class="experience-stack">
-        <article class="experience-card">
-          <div class="experience-header">
+      <section class="section-block timeline">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>General Motors</h4>
-              <p class="role-title">Dealer Sales Solution Testing Lead (Contract)</p>
+              <h3>General Motors</h3>
+              <p class="job-title">Dealer Sales Solution Testing Lead (Contract)</p>
             </div>
-            <div class="experience-meta">
-              <span>Remote</span>
-              <span>Aug 2022 – Jan 2025</span>
-            </div>
+            <p class="job-meta">Remote | Aug 2022 – Jan 2025</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Supported dealer application rollouts by onboarding dealers and software vendors, reviewing requirements as product owner, and confirming business scope and testability before downstream testing and deployment activities.</li>
             <li>Served as Business Owner / Product Owner for multiple dealer applications, partnering with stakeholders to define scope, success criteria, and release expectations.</li>
             <li>Led UAT, integration testing, and API testing across dealer and B2B vendor platforms using Azure DevOps, Postman, SoapUI, and Insomnia.</li>
@@ -106,18 +87,15 @@
           </ul>
         </article>
 
-        <article class="experience-card">
-          <div class="experience-header">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>Civix</h4>
-              <p class="role-title">Senior QA Project Lead</p>
+              <h3>Civix</h3>
+              <p class="job-title">Senior QA Project Lead</p>
             </div>
-            <div class="experience-meta">
-              <span>Remote</span>
-              <span>Sept 2020 – Jun 2022</span>
-            </div>
+            <p class="job-meta">Remote | Sept 2020 – Jun 2022</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Supported large-scale SaaS platforms used by government agencies by coordinating validation work across web and mobile applications, reviewing evidence, and helping teams make informed release decisions.</li>
             <li>Served as Scrum QA Lead, tracking regression progress, surfacing delivery risks, and coordinating dependency follow-through across the team.</li>
             <li>Partnered with developers and stakeholders to review user stories, clarify expected outcomes, confirm requirements, and support business alignment before execution.</li>
@@ -126,18 +104,15 @@
           </ul>
         </article>
 
-        <article class="experience-card">
-          <div class="experience-header">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>Walt Disney World</h4>
-              <p class="role-title">Senior QA / BA Lead (Contract)</p>
+              <h3>Walt Disney World</h3>
+              <p class="job-title">Senior QA / BA Lead (Contract)</p>
             </div>
-            <div class="experience-meta">
-              <span>Orlando, FL</span>
-              <span>Oct 2019 – Apr 2020</span>
-            </div>
+            <p class="job-meta">Orlando, FL | Oct 2019 – Apr 2020</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Partnered with Revenue Management to validate pricing logic, rate configurations, and reporting accuracy.</li>
             <li>Defined QA deliverables, supported requirements intake, and maintained requirements traceability from intake through fulfillment.</li>
             <li>Created test plans that validated configuration stability, report accuracy, and data integrity through SQL review and targeted validation checks against defined requirements.</li>
@@ -146,18 +121,15 @@
           </ul>
         </article>
 
-        <article class="experience-card">
-          <div class="experience-header">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>Orange County Public Schools</h4>
-              <p class="role-title">QA Lead / UAT Project Facilitator (Contract)</p>
+              <h3>Orange County Public Schools</h3>
+              <p class="job-title">QA Lead / UAT Project Facilitator (Contract)</p>
             </div>
-            <div class="experience-meta">
-              <span>Orlando, FL</span>
-              <span>May 2019 – Oct 2019</span>
-            </div>
+            <p class="job-meta">Orlando, FL | May 2019 – Oct 2019</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Led test planning, UAT coordination, and execution for ERP modernization across PeopleSoft and Skyward, aligning business users and project teams around test scope and delivery timing.</li>
             <li>Defined and managed requirements scope, QA deliverables, and requirements traceability from intake through fulfillment.</li>
             <li>Managed defect lifecycles in Jira, documented detailed evidence, and supported issue resolution through clear follow-through with project and development teams.</li>
@@ -165,18 +137,15 @@
           </ul>
         </article>
 
-        <article class="experience-card">
-          <div class="experience-header">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>Digicel PlayGo</h4>
-              <p class="role-title">Senior QA Engineer / Business Project Lead</p>
+              <h3>Digicel PlayGo</h3>
+              <p class="job-title">Senior QA Engineer / Business Project Lead</p>
             </div>
-            <div class="experience-meta">
-              <span>Miami, FL</span>
-              <span>May 2017 – May 2019</span>
-            </div>
+            <p class="job-meta">Miami, FL | May 2017 – May 2019</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Executed mobile testing across iOS, Android, and set-top box applications to validate playback, subscriptions, UI responsiveness, and end-to-end user flow.</li>
             <li>Validated streaming quality across devices, including video and audio playback, buffering, closed captioning, VOD, and metadata.</li>
             <li>Tested web and mobile e-commerce purchase flows, authentication, subscription packages, and restore paths.</li>
@@ -184,18 +153,15 @@
           </ul>
         </article>
 
-        <article class="experience-card">
-          <div class="experience-header">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>Florida Virtual School</h4>
-              <p class="role-title">Senior QA Analyst (Contract)</p>
+              <h3>Florida Virtual School</h3>
+              <p class="job-title">Senior QA Analyst (Contract)</p>
             </div>
-            <div class="experience-meta">
-              <span>Orlando, FL</span>
-              <span>Sept 2016 – Feb 2017</span>
-            </div>
+            <p class="job-meta">Orlando, FL | Sept 2016 – Feb 2017</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Developed and executed test strategies to verify software features against functional requirements and user experience standards.</li>
             <li>Performed mobile, functional, regression, and integration testing to validate new functionality and expected system behavior.</li>
             <li>Conducted API testing in Postman for request and response verification.</li>
@@ -203,18 +169,15 @@
           </ul>
         </article>
 
-        <article class="experience-card">
-          <div class="experience-header">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>LSQ Funding</h4>
-              <p class="role-title">Senior QA Lead</p>
+              <h3>LSQ Funding</h3>
+              <p class="job-title">Senior QA Lead</p>
             </div>
-            <div class="experience-meta">
-              <span>Maitland, FL</span>
-              <span>Mar 2015 – May 2016</span>
-            </div>
+            <p class="job-meta">Maitland, FL | Mar 2015 – May 2016</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Led SIT and UAT for financial applications supporting cash flow and invoicing workflows, coordinating priorities with product, business, and development teams.</li>
             <li>Created test strategies, test plans, and test cases using a practical risk-based testing approach.</li>
             <li>Executed backend data validation using SQL queries and supported reconciliation checks to confirm financial data accuracy.</li>
@@ -222,18 +185,15 @@
           </ul>
         </article>
 
-        <article class="experience-card">
-          <div class="experience-header">
+        <article class="timeline-card">
+          <div class="timeline-header">
             <div>
-              <h4>Walt Disney World</h4>
-              <p class="role-title">Senior Tech Specialist</p>
+              <h3>Walt Disney World</h3>
+              <p class="job-title">Senior Tech Specialist</p>
             </div>
-            <div class="experience-meta">
-              <span>Orlando, FL</span>
-              <span>Nov 2002 – Jan 2015</span>
-            </div>
+            <p class="job-meta">Orlando, FL | Nov 2002 – Jan 2015</p>
           </div>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Led QA strategy and end-to-end delivery across enterprise platforms supporting parks, hotels, transportation, and cruise operations.</li>
             <li>Led a blended QA team across manual and automation testing, overseeing assignments, defect triage, knowledge sharing, and automation code reviews.</li>
             <li>Designed and executed test cases in HP QC/ALM and SoapUI, documenting defects, maintaining traceability, and building test assets.</li>
@@ -241,10 +201,6 @@
           </ul>
         </article>
       </section>
-
-      <footer class="site-footer">
-        <p>© 2026 Raquel Dillon — Senior QA Lead</p>
-      </footer>
     </main>
   </div>
 
