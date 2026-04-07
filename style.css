@@ -470,7 +470,7 @@ li {
 }
 
 .milestone-tagline {
-  margin: 0;
+  margin: 0 0 var(--space-2);
   color: var(--accent);
   font-weight: 700;
 }
@@ -482,19 +482,9 @@ li {
 }
 
 .milestone-divider {
-  height: 2px;
-  width: 100%;
-  background: var(--accent-soft);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid rgba(24, 75, 122, 0.08);
-  margin: var(--space-4) 0;
-  border-radius: 999px;
-}
-
-.milestone-divider.soft {
   height: 1px;
-  background: var(--border);
-  border: 0;
+  width: 100%;
+  background: var(--border-strong);
   margin: var(--space-4) 0;
 }
 
