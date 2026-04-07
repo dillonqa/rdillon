@@ -1,6 +1,6 @@
 /* =========================================================
    Shared site styles for Raquel Dillon portfolio
-   Built for GitHub Pages, plain HTML/CSS, easy to edit
+   Plain HTML/CSS, GitHub Pages friendly
 ========================================================= */
 
 :root {
@@ -47,9 +47,6 @@ body {
   line-height: 1.6;
 }
 
-/* ---------------------------------------------------------
-   Links and text helpers
---------------------------------------------------------- */
 a {
   color: var(--accent);
   text-decoration: none;
@@ -91,9 +88,6 @@ li {
   font-weight: 600;
 }
 
-/* ---------------------------------------------------------
-   Layout shell
---------------------------------------------------------- */
 .mobile-header {
   display: none;
 }
@@ -215,9 +209,6 @@ li {
   margin: 0 auto;
 }
 
-/* ---------------------------------------------------------
-   Shared cards and sections
---------------------------------------------------------- */
 .hero-card,
 .card,
 .timeline-card,
@@ -479,9 +470,6 @@ li {
   font-size: 0.92rem;
 }
 
-/* ---------------------------------------------------------
-   Mobile and tablet
---------------------------------------------------------- */
 @media (max-width: 1080px) {
   .grid-three {
     grid-template-columns: 1fr;
