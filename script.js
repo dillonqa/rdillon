@@ -1,3 +1,9 @@
+/* =========================================================
+   Shared site script
+   - Handles mobile sidebar toggle
+   - Highlights current page in navigation
+========================================================= */
+
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
   const currentPage = body.getAttribute("data-page");
@@ -5,38 +11,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.querySelectorAll(".sidebar-nav a");
 
+  // Highlight active navigation item
   navLinks.forEach((link) => {
     if (link.dataset.nav === currentPage) {
       link.classList.add("active");
+      link.setAttribute("aria-current", "page");
     }
-
-    link.addEventListener("click", function () {
-      if (window.innerWidth <= 900 && sidebar) {
-        sidebar.classList.remove("open");
-        if (menuToggle) {
-          menuToggle.setAttribute("aria-expanded", "false");
-        }
-      }
-    });
   });
 
+  // Mobile menu toggle
   if (menuToggle && sidebar) {
     menuToggle.addEventListener("click", function () {
       const isOpen = sidebar.classList.toggle("open");
-      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      body.classList.toggle("menu-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
-    document.addEventListener("click", function (event) {
-      const clickedInsideSidebar = sidebar.contains(event.target);
-      const clickedToggle = menuToggle.contains(event.target);
-
-      if (
-        window.innerWidth <= 900 &&
-        sidebar.classList.contains("open") &&
-        !clickedInsideSidebar &&
-        !clickedToggle
-      ) {
+    // Close menu after clicking a nav link on mobile
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
         sidebar.classList.remove("open");
+        body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Close menu when screen becomes desktop size
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 900) {
+        sidebar.classList.remove("open");
+        body.classList.remove("menu-open");
         menuToggle.setAttribute("aria-expanded", "false");
       }
     });
