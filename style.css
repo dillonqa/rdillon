@@ -1,5 +1,5 @@
 /* =========================
-   Base Reset
+   RESET
 ========================= */
 *,
 *::before,
@@ -19,136 +19,145 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
 /* =========================
-   Layout
+   SITE LAYOUT
 ========================= */
 .site-shell {
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
   min-height: 100vh;
 }
 
 .sidebar {
-  width: 320px;
   background: #10233f;
   color: #ffffff;
-  position: sticky;
-  top: 0;
-  height: 100vh;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .sidebar-inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 28px 24px;
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  padding: 28px 22px;
   overflow-y: auto;
 }
 
 .main-content {
-  flex: 1;
-  padding: 36px;
-  max-width: calc(100% - 320px);
+  min-width: 0;
+  padding: 32px;
 }
 
 /* =========================
-   Sidebar
+   SIDEBAR
 ========================= */
 .profile-wrap {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .profile-photo {
-  width: 132px;
-  height: 132px;
+  width: 128px;
+  height: 128px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.16);
-  display: block;
-  margin: 0 auto 18px;
+  margin: 0 auto 16px;
+  border: 4px solid rgba(255, 255, 255, 0.14);
 }
 
 .sidebar-name {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-size: 1.8rem;
   line-height: 1.2;
 }
 
 .sidebar-title {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   font-size: 1rem;
   font-weight: 700;
-  color: #d9e5ff;
+  color: #dce8ff;
 }
 
 .sidebar-roles {
   margin: 0;
-  font-size: 0.93rem;
-  color: #c2d3f2;
+  font-size: 0.92rem;
+  color: #c5d4ef;
 }
 
 .sidebar-contact {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 18px 0 20px;
+  padding: 18px 0;
+  margin: 18px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  margin-top: 8px;
 }
 
-.sidebar-contact a,
-.sidebar-nav a {
+.sidebar-contact a {
   color: #ffffff;
   text-decoration: none;
+  word-break: break-word;
 }
 
-.sidebar-contact a:hover,
-.sidebar-nav a:hover {
-  color: #d9e5ff;
+.sidebar-contact a:hover {
+  color: #dce8ff;
 }
 
 .menu-toggle {
   display: none;
-  margin: 20px 0 14px;
+  width: 100%;
   padding: 10px 14px;
-  background: #1e3a63;
+  margin-bottom: 14px;
+  background: #1c3a66;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
-  cursor: pointer;
   font-size: 0.95rem;
+  cursor: pointer;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
+  gap: 8px;
 }
 
 .sidebar-nav a {
+  text-decoration: none;
+  color: #ffffff;
   padding: 10px 12px;
   border-radius: 10px;
   font-weight: 600;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease;
 }
 
-.sidebar-nav a.active,
-.sidebar-nav a:hover {
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
   background: rgba(255, 255, 255, 0.12);
 }
 
 /* =========================
-   Cards and Typography
+   CARDS / TYPOGRAPHY
 ========================= */
 .card {
   background: #ffffff;
   border: 1px solid #dbe3ef;
   border-radius: 18px;
   padding: 24px;
-  box-shadow: 0 10px 28px rgba(16, 35, 63, 0.06);
+  box-shadow: 0 10px 24px rgba(16, 35, 63, 0.05);
+}
+
+.card + .card {
+  margin-top: 0;
 }
 
 .hero-card {
@@ -164,6 +173,7 @@ body {
   color: #335c92;
 }
 
+h1,
 h2,
 h3,
 h4 {
@@ -173,18 +183,18 @@ h4 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.95rem;
   margin-bottom: 14px;
 }
 
 h3 {
-  font-size: 1.22rem;
+  font-size: 1.2rem;
   margin-bottom: 12px;
 }
 
 h4 {
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 p {
@@ -197,21 +207,17 @@ p {
   color: #334155;
 }
 
-.lead-secondary {
-  margin-bottom: 0;
-}
-
 .company {
   margin: 0 0 6px;
-  font-size: 0.88rem;
-  font-weight: 700;
+  font-size: 0.86rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  font-weight: 700;
   color: #335c92;
 }
 
 /* =========================
-   Grids
+   SPACING / GRID
 ========================= */
 .grid-2,
 .grid-3,
@@ -233,7 +239,6 @@ p {
 
 .mini-card-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 0;
 }
 
 .plan-grid {
@@ -245,7 +250,7 @@ p {
 }
 
 /* =========================
-   Buttons and Links
+   BUTTONS / LINKS
 ========================= */
 .button-row {
   display: flex;
@@ -263,11 +268,6 @@ p {
   text-decoration: none;
   font-weight: 700;
   border: 1px solid #10233f;
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.button:hover {
-  transform: translateY(-1px);
 }
 
 .button-secondary {
@@ -289,11 +289,16 @@ p {
 
 .text-link {
   color: #1e4d8d;
+  text-decoration: none;
   word-break: break-word;
 }
 
+.text-link:hover {
+  text-decoration: underline;
+}
+
 /* =========================
-   Chips and Lists
+   CHIPS / LISTS
 ========================= */
 .chip-group {
   display: flex;
@@ -323,10 +328,10 @@ p {
 }
 
 /* =========================
-   Special Card Styles
+   SPECIAL BLOCKS
 ========================= */
 .feature-card h3 {
-  padding: 0 0 10px;
+  padding-bottom: 10px;
   margin-bottom: 12px;
   border-bottom: 2px solid #dbe3ef;
 }
@@ -345,21 +350,21 @@ p {
 .experience-head {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
   align-items: flex-start;
+  gap: 18px;
   padding-bottom: 14px;
   margin-bottom: 16px;
   border-bottom: 2px solid #e8eef7;
 }
 
 .experience-meta {
-  white-space: nowrap;
-  font-size: 0.95rem;
-  color: #475569;
   margin: 0;
+  white-space: nowrap;
+  color: #475569;
+  font-size: 0.95rem;
 }
 
-.plan-card .plan-step {
+.plan-step {
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -369,13 +374,13 @@ p {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
 }
 
 .plan-theme {
   font-weight: 700;
   color: #335c92;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .plan-subtitle {
@@ -393,10 +398,10 @@ p {
 }
 
 /* =========================
-   Footer
+   FOOTER
 ========================= */
 .site-footer {
-  margin-top: 34px;
+  margin-top: 32px;
   padding-top: 20px;
   border-top: 2px solid #cfd9e8;
   color: #475569;
@@ -405,7 +410,7 @@ p {
 }
 
 /* =========================
-   Responsive
+   RESPONSIVE
 ========================= */
 @media (max-width: 1100px) {
   .grid-3 {
@@ -419,26 +424,31 @@ p {
 
 @media (max-width: 900px) {
   .site-shell {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .sidebar-inner {
+    position: static;
+    min-height: auto;
+    padding: 22px 18px;
   }
 
   .main-content {
-    max-width: 100%;
-    padding: 22px;
+    padding: 22px 18px;
   }
 
   .menu-toggle {
-    display: inline-block;
+    display: block;
   }
 
   .sidebar-nav {
     display: none;
+    margin-top: 4px;
   }
 
   .sidebar-nav.open {
@@ -465,19 +475,13 @@ p {
 }
 
 @media (max-width: 520px) {
-  .sidebar-inner,
-  .main-content {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .card {
     padding: 20px;
   }
 
   .profile-photo {
-    width: 112px;
-    height: 112px;
+    width: 110px;
+    height: 110px;
   }
 
   .button-row {
