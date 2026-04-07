@@ -465,30 +465,37 @@ li {
   padding: var(--space-5);
 }
 
-.milestone-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  font-size: 1.1rem;
-  font-weight: 800;
+.milestone-card h3 {
   margin-bottom: var(--space-3);
 }
 
 .milestone-tagline {
-  margin: 0 0 var(--space-2);
+  margin: 0;
   color: var(--accent);
   font-weight: 700;
 }
 
 .milestone-label {
-  margin: 0 0 var(--space-3);
+  margin: 0;
   color: var(--muted);
   font-weight: 600;
+}
+
+.milestone-divider {
+  height: 2px;
+  width: 100%;
+  background: var(--accent-soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid rgba(24, 75, 122, 0.08);
+  margin: var(--space-4) 0;
+  border-radius: 999px;
+}
+
+.milestone-divider.soft {
+  height: 1px;
+  background: var(--border);
+  border: 0;
+  margin: var(--space-4) 0;
 }
 
 /* =========================
