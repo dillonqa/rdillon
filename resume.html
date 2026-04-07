@@ -4,36 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Raquel Dillon</title>
-  <meta name="description" content="Resume summary page for Raquel Dillon with target roles, tools, platforms, validation strengths, and resume download access." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <meta
+    name="description"
+    content="Resume summary page for Raquel Dillon covering QA leadership, UAT, SIT, integration testing, API testing, SQL validation, tools, platforms, and role alignment."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body data-page="resume">
-  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">
-    <span></span><span></span><span></span>
-  </button>
+  <header class="mobile-header">
+    <a class="mobile-brand" href="index.html">Raquel Dillon</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
 
-  <div class="page-shell">
+  <div class="site-shell">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-inner">
-        <div class="profile-wrap">
-          <img class="profile-photo" src="https://dillonqa.github.io/rdillon/assets/profile.jpg" alt="Professional headshot of Raquel Dillon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="profile-photo-fallback" style="display:none;">RD</div>
+        <img src="profile.jpg" alt="Professional photo of Raquel Dillon" class="profile-photo" />
+
+        <div class="identity-block">
           <h1>Raquel Dillon</h1>
-          <p class="sidebar-role">QA Lead / Senior QA Lead</p>
-          <p class="sidebar-focus">UAT · Integration Testing · ERP QA · Business Analysis</p>
+          <p class="role-title">Senior QA Lead</p>
+          <p class="role-summary">
+            QA Lead • UAT Lead • Senior QA Analyst • Integration Test Lead • ERP QA Lead • Business Analyst
+          </p>
         </div>
 
-        <div class="sidebar-contact">
+        <div class="sidebar-links">
           <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-          <a href="tel:14076873306">407-687-3306</a>
-          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
 
-        <nav class="sidebar-nav" aria-label="Primary navigation">
-          <a href="index.html" data-nav="home">Home</a>
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a href="index.html" data-nav="index">Home</a>
           <a href="experience.html" data-nav="experience">Experience</a>
           <a href="resume.html" data-nav="resume">Resume</a>
           <a href="valueplan.html" data-nav="valueplan">Value Plan</a>
@@ -42,132 +48,131 @@
       </div>
     </aside>
 
-    <main class="main-content">
-      <section class="hero hero-compact">
-        <p class="eyebrow">Resume</p>
-        <h2>Senior QA Lead resume and quick-profile view.</h2>
-        <p class="hero-text">
-          This page gives recruiters and hiring managers a structured summary of role fit, tools, platforms, and validation strengths.
+    <main class="content">
+      <section class="hero-card">
+        <p class="eyebrow">Resume summary</p>
+        <h2>Senior QA Lead profile built for quick recruiter review.</h2>
+        <p class="lead">
+          This page gives a structured summary of role focus, tools, platforms, industry coverage,
+          and validation strengths without repeating the entire resume word for word.
         </p>
 
         <div class="button-row">
-          <a class="btn btn-primary" href="Raquel_Dillon_QA_Lead_Resume_2026.docx" download>Download Resume (DOCX)</a>
-          <a class="btn btn-secondary" href="contact.html">Contact</a>
+          <a class="button-secondary" href="experience.html">View Experience</a>
+          <a class="button-secondary" href="contact.html">Request Resume</a>
         </div>
       </section>
 
-      <section class="grid grid-2">
+      <section class="grid-two">
         <article class="card">
           <h3>Target Roles</h3>
-          <ul class="standard-list">
-            <li>QA Lead</li>
-            <li>Senior QA Lead</li>
-            <li>UAT Lead</li>
-            <li>Senior QA Analyst</li>
-            <li>Test Lead</li>
-            <li>Integration Test Lead</li>
-            <li>ERP QA Lead</li>
-            <li>Senior QA Engineer</li>
-            <li>QA/UAT Test Coordinator</li>
-            <li>Business Analyst</li>
-          </ul>
+          <div class="chip-group">
+            <span class="chip">QA Lead</span>
+            <span class="chip">Senior QA Lead</span>
+            <span class="chip">UAT Lead</span>
+            <span class="chip">Senior QA Analyst</span>
+            <span class="chip">Test Lead</span>
+            <span class="chip">Integration Test Lead</span>
+            <span class="chip">ERP QA Lead</span>
+            <span class="chip">Senior QA Engineer</span>
+            <span class="chip">QA/UAT Test Coordinator</span>
+            <span class="chip">Business Analyst</span>
+          </div>
         </article>
 
         <article class="card">
-          <h3>Coverage</h3>
-          <p>Automotive · Government · Hospitality · Education · Financial Services · Digital Media</p>
-          <hr class="card-divider" />
           <h3>Core Stack</h3>
-          <ul class="pill-list">
-            <li>Azure DevOps</li>
-            <li>Jira</li>
-            <li>Postman</li>
-            <li>SoapUI</li>
-            <li>BrowserStack</li>
-            <li>SQL</li>
-            <li>SAP HANA</li>
-          </ul>
+          <div class="chip-group">
+            <span class="chip">Azure DevOps</span>
+            <span class="chip">Jira</span>
+            <span class="chip">Postman</span>
+            <span class="chip">SoapUI</span>
+            <span class="chip">BrowserStack</span>
+            <span class="chip">SQL</span>
+            <span class="chip">SAP HANA</span>
+          </div>
         </article>
       </section>
 
-      <section class="grid grid-2">
+      <section class="grid-two">
+        <article class="card">
+          <h3>Industry Coverage</h3>
+          <div class="chip-group">
+            <span class="chip">Automotive</span>
+            <span class="chip">Government</span>
+            <span class="chip">Hospitality</span>
+            <span class="chip">Education</span>
+            <span class="chip">Financial Services</span>
+            <span class="chip">Digital Media</span>
+            <span class="chip">Transportation</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Validation Strengths</h3>
+          <div class="chip-group">
+            <span class="chip">SIT</span>
+            <span class="chip">UAT</span>
+            <span class="chip">Integration Testing</span>
+            <span class="chip">API Testing</span>
+            <span class="chip">ETL Testing</span>
+            <span class="chip">SQL Validation</span>
+            <span class="chip">Data Reconciliation</span>
+            <span class="chip">Requirements Traceability</span>
+            <span class="chip">Defect Triage</span>
+            <span class="chip">Release Readiness</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid-two">
         <article class="card">
           <h3>Tools</h3>
-          <ul class="pill-list">
-            <li>Azure DevOps</li>
-            <li>Jira</li>
-            <li>Confluence</li>
-            <li>TestRail</li>
-            <li>HP ALM / QC</li>
-            <li>Postman</li>
-            <li>SoapUI</li>
-            <li>Insomnia</li>
-            <li>BrowserStack</li>
-            <li>Selenium WebDriver</li>
-            <li>TestComplete</li>
-          </ul>
+          <div class="chip-group">
+            <span class="chip">Azure DevOps</span>
+            <span class="chip">Jira</span>
+            <span class="chip">Confluence</span>
+            <span class="chip">TestRail</span>
+            <span class="chip">HP ALM / QC</span>
+            <span class="chip">Postman</span>
+            <span class="chip">SoapUI</span>
+            <span class="chip">Insomnia</span>
+            <span class="chip">BrowserStack</span>
+            <span class="chip">Selenium WebDriver</span>
+            <span class="chip">TestComplete</span>
+          </div>
         </article>
 
         <article class="card">
           <h3>Platforms</h3>
-          <ul class="pill-list">
-            <li>SAP ERP</li>
-            <li>SAP HANA</li>
-            <li>SAP HR</li>
-            <li>Oracle Fusion Cloud</li>
-            <li>Workday</li>
-            <li>Salesforce</li>
-            <li>PeopleSoft</li>
-            <li>Microsoft Dynamics 365</li>
-            <li>Skyward SIS</li>
-          </ul>
+          <div class="chip-group">
+            <span class="chip">SAP ERP</span>
+            <span class="chip">SAP HANA</span>
+            <span class="chip">SAP HR</span>
+            <span class="chip">Oracle Fusion Cloud</span>
+            <span class="chip">Workday</span>
+            <span class="chip">Salesforce</span>
+            <span class="chip">PeopleSoft</span>
+            <span class="chip">Dynamics 365</span>
+            <span class="chip">Skyward SIS</span>
+          </div>
         </article>
       </section>
 
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Resume snapshot</p>
-          <h2>What the full resume covers.</h2>
-        </div>
-
-        <div class="grid grid-2">
-          <article class="card">
-            <ul class="standard-list">
-              <li>QA leadership and delivery across enterprise platforms</li>
-              <li>Requirements clarification, workflow review, and traceability support</li>
-              <li>API testing, ETL testing, SQL validation, and data reconciliation</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <ul class="standard-list">
-              <li>Cross-functional coordination with business, product, development, and QA teams</li>
-              <li>Release readiness support through evidence, defect tracking, and validation discipline</li>
-              <li>Experience tied to enterprise systems and complex business workflows</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Validation strengths</p>
-          <h2>Hands-on coverage recruiters can scan quickly.</h2>
-        </div>
-
-        <ul class="pill-list pill-list-wide">
-          <li>SIT</li>
-          <li>UAT</li>
-          <li>Integration Testing</li>
-          <li>API Testing</li>
-          <li>ETL Testing</li>
-          <li>SQL Validation</li>
-          <li>Data Reconciliation</li>
-          <li>Requirements Traceability</li>
-          <li>Defect Triage</li>
-          <li>Release Readiness</li>
+      <section class="card">
+        <h3>Resume Snapshot</h3>
+        <ul class="clean-list">
+          <li>QA leadership and delivery across enterprise platforms</li>
+          <li>Requirements clarification, workflow review, and traceability support</li>
+          <li>API testing, ETL testing, SQL validation, and data reconciliation</li>
+          <li>Cross-functional coordination with business, product, development, and QA teams</li>
+          <li>Release readiness support through evidence, defect tracking, and validation discipline</li>
         </ul>
       </section>
+
+      <footer class="site-footer">
+        <p>© 2026 Raquel Dillon | Senior QA Lead</p>
+      </footer>
     </main>
   </div>
 
