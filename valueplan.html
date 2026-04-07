@@ -4,122 +4,102 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Value Plan | Raquel Dillon</title>
-  <meta name="description" content="30 60 90 120 day value plan for a Senior QA Lead role with priorities around release readiness, traceability, QA communication, and quality delivery." />
+  <meta name="description" content="30, 60, 90, and 120 day value plan for Raquel Dillon focused on QA leadership, traceability, execution discipline, and release readiness." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body data-page="valueplan">
-  <header class="mobile-topbar">
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
-    <div class="mobile-topbar-text">
-      <strong>Raquel Dillon</strong>
-      <span>Value Plan</span>
-    </div>
-  </header>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
 
-  <div class="site-shell">
+  <div class="page-shell">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-inner">
-        <div class="profile-card">
-          <img src="profile.jpg" alt="Professional headshot of Raquel Dillon" class="profile-photo" />
-          <h1 class="profile-name">Raquel Dillon</h1>
-          <p class="profile-role">
-            Senior QA Lead<br />
-            UAT · SIT · Integration Testing · Business Analysis Support
-          </p>
-
-          <div class="contact-list">
-            <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-            <a href="tel:4076873306">407-687-3306</a>
-            <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
+        <div class="profile-wrap">
+          <img class="profile-photo" src="https://dillonqa.github.io/rdillon/assets/profile.jpg" alt="Professional headshot of Raquel Dillon" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="profile-photo-fallback" style="display:none;">RD</div>
+          <h1>Raquel Dillon</h1>
+          <p class="sidebar-role">Senior QA Lead</p>
+          <p class="sidebar-focus">UAT · SIT · Integration Testing · Business Analysis Support</p>
         </div>
 
-        <nav class="sidebar-nav" aria-label="Main navigation">
+        <div class="sidebar-contact">
+          <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
+          <a href="tel:14076873306">407-687-3306</a>
+          <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Primary navigation">
           <a href="index.html" data-nav="home">Home</a>
-          <a href="overview.html" data-nav="overview">Overview</a>
           <a href="experience.html" data-nav="experience">Experience</a>
           <a href="resume.html" data-nav="resume">Resume</a>
           <a href="valueplan.html" data-nav="valueplan">Value Plan</a>
           <a href="contact.html" data-nav="contact">Contact</a>
         </nav>
-
-        <div class="sidebar-footer">
-          <p class="sidebar-note">Executive-style planning view for early impact and role readiness.</p>
-        </div>
       </div>
     </aside>
 
     <main class="main-content">
-      <section class="page-hero">
-        <div class="hero-copy hero-copy-wide">
-          <p class="eyebrow">30 / 60 / 90 / 120 Day Plan</p>
-          <h2>How I would approach value delivery in a Senior QA Lead role.</h2>
-          <p class="hero-text">
-            High-level plan focused on learning the environment, clarifying scope, strengthening traceability,
-            improving test execution discipline, and supporting release readiness.
-          </p>
-
-          <div class="button-row">
-            <a class="btn btn-primary" href="overview.html">View Overview</a>
-            <a class="btn btn-secondary" href="contact.html">Contact</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-card">
-        <p class="eyebrow">Plan Intent</p>
-        <h3>Why this page matters</h3>
-        <p>
-          This plan shows how value would be approached early in role through clearer requirements alignment,
-          stronger execution discipline, improved visibility, and more confident release support.
+      <section class="hero hero-compact">
+        <p class="eyebrow">Value plan</p>
+        <h2>30 / 60 / 90 / 120 day plan.</h2>
+        <p class="hero-text">
+          High-level plan focused on learning the environment, clarifying scope, strengthening traceability,
+          improving test execution discipline, and supporting release readiness.
         </p>
       </section>
 
-      <section class="content-grid two-col">
-        <article class="phase-card">
-          <span class="phase-number">30</span>
+      <section class="section-block">
+        <article class="card">
+          <h3>Plan Intent</h3>
+          <p>This page shows how value would be approached early in role through clearer requirements alignment, stronger execution discipline, improved visibility, and more confident release support.</p>
+        </article>
+      </section>
+
+      <section class="plan-grid">
+        <article class="plan-card">
+          <span class="plan-number">30</span>
           <h3>First 30 days</h3>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Understand products, scope, stakeholders, and release cadence</li>
             <li>Review environments, test artifacts, and defect processes</li>
             <li>Assess current QA communication and escalation flow</li>
           </ul>
         </article>
 
-        <article class="phase-card">
-          <span class="phase-number">60</span>
+        <article class="plan-card">
+          <span class="plan-number">60</span>
           <h3>30–60 days</h3>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Refine test planning and traceability across priority areas</li>
             <li>Strengthen alignment with business, product, and development teams</li>
             <li>Identify quick wins for quality visibility and test discipline</li>
           </ul>
         </article>
 
-        <article class="phase-card">
-          <span class="phase-number">90</span>
+        <article class="plan-card">
+          <span class="plan-number">90</span>
           <h3>60–90 days</h3>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Improve regression, SIT, and UAT execution consistency</li>
             <li>Support clearer defect triage and risk reporting</li>
             <li>Increase readiness confidence for upcoming releases</li>
           </ul>
         </article>
 
-        <article class="phase-card">
-          <span class="phase-number">120</span>
+        <article class="plan-card">
+          <span class="plan-number">120</span>
           <h3>90–120 days</h3>
-          <ul class="clean-list">
+          <ul class="standard-list">
             <li>Embed repeatable QA processes and dashboards</li>
             <li>Improve requirement-to-test visibility across teams</li>
             <li>Plan longer-term improvements for automation and monitoring</li>
           </ul>
         </article>
       </section>
-
-      <footer class="site-footer">
-        <p>© 2026 Raquel Dillon — Senior QA Lead</p>
-      </footer>
     </main>
   </div>
 
