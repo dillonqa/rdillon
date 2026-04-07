@@ -470,76 +470,6 @@ li {
   font-size: 0.92rem;
 }
 
-/* =========================================================
-   Value Plan card format
-========================================================= */
-
-.valueplan-sections {
-  display: grid;
-  gap: 1.5rem;
-  margin-bottom: var(--space-6);
-}
-
-.valueplan-block {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  background: var(--panel);
-}
-
-.valueplan-header {
-  background: #0e110c;
-  padding: 1.4rem 1.5rem 1rem;
-}
-
-.valueplan-header h3 {
-  margin: 0;
-  font-size: 2.1rem;
-  line-height: 1.1;
-  font-weight: 500;
-  color: #d6a14d;
-}
-
-.valueplan-tagline {
-  margin: 0.45rem 0 0;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.valueplan-line {
-  display: block;
-  width: 32px;
-  height: 3px;
-  margin-top: 0.8rem;
-  background: #d6a14d;
-}
-
-.valueplan-body {
-  background: #f4efe4;
-  padding: 1.2rem 1.5rem 1.35rem;
-}
-
-.valueplan-label {
-  margin: 0 0 0.85rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #d6a14d;
-}
-
-.valueplan-body .clean-list {
-  margin: 0;
-}
-
-.valueplan-body .clean-list li {
-  color: #18212b;
-}
-
 @media (max-width: 1080px) {
   .grid-three {
     grid-template-columns: 1fr;
@@ -674,17 +604,5 @@ li {
   .section-heading {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .valueplan-header {
-    padding: 1.15rem 1rem 0.9rem;
-  }
-
-  .valueplan-header h3 {
-    font-size: 1.8rem;
-  }
-
-  .valueplan-body {
-    padding: 1rem;
   }
 }
