@@ -1,5 +1,3 @@
-// Mobile nav toggle for smaller screens
-
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 
