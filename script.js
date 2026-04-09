@@ -1,18 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPage = document.body.getAttribute("data-page");
-  const navLinks = document.querySelectorAll(".sidebar-nav a");
-  const menuToggle = document.getElementById("menuToggle");
-  const sidebarNav = document.querySelector(".sidebar-nav");
+// Mobile nav toggle for smaller screens
 
-  navLinks.forEach((link) => {
-    if (link.getAttribute("data-nav") === currentPage) {
-      link.classList.add("active");
-    }
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+if (navToggle && siteNav) {
+  navToggle.addEventListener("click", () => {
+    siteNav.classList.toggle("open");
+
+    const isOpen = siteNav.classList.contains("open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
   });
-
-  if (menuToggle && sidebarNav) {
-    menuToggle.addEventListener("click", function () {
-      sidebarNav.classList.toggle("open");
-    });
-  }
-});
+}
