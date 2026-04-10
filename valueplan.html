@@ -4,30 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raquel Dillon | Value Plan</title>
-  <meta
-    name="description"
-    content="How Raquel Dillon approaches quality, delivery support, and ramp-up in QA leadership roles."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">Raquel Dillon</a>
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Raquel Dillon Home">
+        <span class="brand-name">Raquel Dillon</span>
+        <span class="brand-role">Senior QA Professional</span>
+      </a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <nav class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="bio.html">Bio</a>
         <a href="valueplan.html" class="active">Value Plan</a>
@@ -38,166 +25,130 @@
 
   <main>
     <section class="page-hero">
-      <div class="container narrow">
-        <p class="eyebrow">Value Plan</p>
-        <h1>How I approach quality and delivery support</h1>
-        <p class="lede center-text">
-          This page gives a clear view of how I approach quality work, where I focus early,
-          and what teams can expect from me during planning, execution, and release support.
-        </p>
+      <div class="container">
+        <div class="hero-card">
+          <h1 class="page-title">Value Plan</h1>
+          <p class="page-kicker">How I approach quality and delivery support.</p>
+
+          <p class="hero-intro">
+            This page gives a clear view of how I approach quality work, where I focus early, and what teams can expect from me during planning, execution, and release support.
+          </p>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3>What I Focus On Early</h3>
+              <p>Requirements clarity, business scope and testability, user stories and acceptance criteria review, traceability, and risk visibility before execution starts.</p>
+            </article>
+
+            <article class="card">
+              <h3>How I Support Delivery</h3>
+              <p>Test planning and execution support, SIT and UAT coordination, defect lifecycle follow-through, status reporting, and release readiness alignment.</p>
+            </article>
+
+            <article class="card">
+              <h3>What I Validate</h3>
+              <p>APIs and request-response behavior, backend data and SQL validation, ETL and reconciliation logic, workflow integrity, and reporting accuracy.</p>
+            </article>
+          </div>
+
+          <div class="note-box">
+            <strong>AI-Assisted Support</strong><br />
+            Where appropriate, I use AI tools to help analyze requirements, generate test scenarios, identify edge cases, refine test cases, improve defect descriptions, and draft QA summaries that support testing and release readiness.
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Operating Approach</p>
-          <h2>Where I focus early and how I support delivery</h2>
+        <div class="panel">
+          <h2 class="section-title">Working Style</h2>
+          <p class="section-subtitle">Quality support that stays connected to business outcomes</p>
+          <p>
+            I approach QA as more than script execution. I focus on whether the business need is clear, whether the requirement is testable, whether the workflow holds together across systems, and whether evidence supports a release decision. I also place value on keeping status visible, defects actionable, and communication grounded in what the test results show.
+          </p>
         </div>
-
-        <div class="card-grid two-up">
-          <article class="card">
-            <h3>What I focus on early</h3>
-            <ul class="clean-list">
-              <li>Requirements clarity</li>
-              <li>Business scope and testability</li>
-              <li>User stories and acceptance criteria review</li>
-              <li>Requirements traceability</li>
-              <li>Risk visibility before execution starts</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>How I support delivery</h3>
-            <ul class="clean-list">
-              <li>Test planning and execution support</li>
-              <li>SIT and UAT coordination</li>
-              <li>Defect lifecycle follow-through</li>
-              <li>Status reporting and delivery visibility</li>
-              <li>Release readiness support and sign-off alignment</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>What I validate</h3>
-            <ul class="clean-list">
-              <li>APIs and request-response behavior</li>
-              <li>Backend data and SQL validation</li>
-              <li>ETL, mapping, and reconciliation logic</li>
-              <li>Workflow integrity across connected systems</li>
-              <li>Reporting accuracy, web experiences, and mobile experiences</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>What teams can expect</h3>
-            <ul class="clean-list">
-              <li>Clear communication</li>
-              <li>Practical QA leadership</li>
-              <li>Well-documented evidence</li>
-              <li>Organized defect handling</li>
-              <li>Steady coordination across business and technical teams</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tinted">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="section-kicker">Working Style</p>
-          <h2>Quality support that stays connected to business outcomes</h2>
-        </div>
-        <p class="center-text">
-          I approach QA as more than script execution. I focus on whether the business need is clear,
-          whether the requirement is testable, whether the workflow holds together across systems,
-          and whether evidence supports a release decision. I also place value on keeping status visible,
-          defects actionable, and communication grounded in what the test results show.
-        </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">30-60-90-120 Day Value Plan</p>
-          <h2>How I would ramp into a QA lead role</h2>
-        </div>
+        <div class="panel">
+          <h2 class="section-title">30-60-90-120 Day Value Plan</h2>
+          <p class="section-subtitle">How I would ramp into a QA lead role</p>
 
-        <div class="card-grid two-up">
-          <article class="card ramp-card">
-            <p class="ramp-label">First 30 Days</p>
-            <h3>Understand the landscape</h3>
-            <ul class="clean-list">
-              <li>Learn the product landscape, business workflows, release cadence, and team structure.</li>
-              <li>Review requirements, active workstreams, defects, test assets, and reporting practices.</li>
-              <li>Understand current SIT, UAT, release readiness, and traceability expectations.</li>
-              <li>Build working relationships with business, product, development, and project stakeholders.</li>
-            </ul>
-          </article>
+          <div class="phase-grid">
+            <article class="phase-card">
+              <h3 class="phase-label">First 30 Days</h3>
+              <p class="phase-subtitle">Learn the landscape, review active work, and build context.</p>
+              <ul>
+                <li>Learn the product landscape, business workflows, release cadence, and team structure.</li>
+                <li>Review requirements, active workstreams, defects, test assets, and reporting practices.</li>
+                <li>Understand current SIT, UAT, release readiness, and traceability expectations.</li>
+                <li>Build working relationships with business, product, development, and project stakeholders.</li>
+              </ul>
+            </article>
 
-          <article class="card ramp-card">
-            <p class="ramp-label">Days 31–60</p>
-            <h3>Find gaps and tighten visibility</h3>
-            <ul class="clean-list">
-              <li>Start identifying gaps in test coverage, defect flow, reporting visibility, and handoff points.</li>
-              <li>Support clearer validation planning tied to scope, risk, and business priorities.</li>
-              <li>Strengthen status tracking and make blockers, risks, and readiness concerns easier to see.</li>
-              <li>Align testing activity more closely with requirements, evidence, and release needs.</li>
-            </ul>
-          </article>
+            <article class="phase-card">
+              <h3 class="phase-label">Days 31–60</h3>
+              <p class="phase-subtitle">Start tightening scope, visibility, and execution alignment.</p>
+              <ul>
+                <li>Start identifying gaps in test coverage, defect flow, reporting visibility, and handoff points.</li>
+                <li>Support clearer validation planning tied to scope, risk, and business priorities.</li>
+                <li>Strengthen status tracking and make blockers, risks, and readiness concerns easier to see.</li>
+                <li>Align testing activity more closely with requirements, evidence, and release needs.</li>
+              </ul>
+            </article>
 
-          <article class="card ramp-card">
-            <p class="ramp-label">Days 61–90</p>
-            <h3>Stabilize delivery patterns</h3>
-            <ul class="clean-list">
-              <li>Help stabilize team execution patterns across planning, testing, defect follow-through, and reporting.</li>
-              <li>Improve coordination across QA, business, and technical teams for smoother validation cycles.</li>
-              <li>Refine traceability, evidence handling, and readiness communication.</li>
-              <li>Support more consistent delivery visibility for leadership and stakeholders.</li>
-            </ul>
-          </article>
+            <article class="phase-card">
+              <h3 class="phase-label">Days 61–90</h3>
+              <p class="phase-subtitle">Improve coordination, traceability, and delivery rhythm.</p>
+              <ul>
+                <li>Help stabilize team execution patterns across planning, testing, defect follow-through, and reporting.</li>
+                <li>Improve coordination across QA, business, and technical teams for smoother validation cycles.</li>
+                <li>Refine traceability, evidence handling, and readiness communication.</li>
+                <li>Support more consistent delivery visibility for leadership and stakeholders.</li>
+              </ul>
+            </article>
 
-          <article class="card ramp-card">
-            <p class="ramp-label">Days 91–120</p>
-            <h3>Make the rhythm more repeatable</h3>
-            <ul class="clean-list">
-              <li>Drive a more repeatable QA operating rhythm tied to scope, risk, and release planning.</li>
-              <li>Support stronger forecasting around readiness, dependencies, and defect impact.</li>
-              <li>Look for practical improvements in process, collaboration, and validation efficiency.</li>
-              <li>Help the team move with more clarity, consistency, and confidence across future releases.</li>
-            </ul>
-          </article>
+            <article class="phase-card">
+              <h3 class="phase-label">Days 91–120</h3>
+              <p class="phase-subtitle">Build repeatability and strengthen future release confidence.</p>
+              <ul>
+                <li>Drive a more repeatable QA operating rhythm tied to scope, risk, and release planning.</li>
+                <li>Support stronger forecasting around readiness, dependencies, and defect impact.</li>
+                <li>Look for practical improvements in process, collaboration, and validation efficiency.</li>
+                <li>Help the team move with more clarity, consistency, and confidence across future releases.</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-tinted">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="section-kicker">Want the background behind this approach?</p>
-          <h2>See the Bio page for role-based examples</h2>
-        </div>
-        <p class="center-text">
-          The Bio page gives the career proof behind this working style across General Motors,
-          Civix, Walt Disney World, OCPS, LSQ, and other environments.
-        </p>
-        <div class="cta-row center">
-          <a class="btn btn-secondary" href="bio.html">Go to Bio</a>
-          <a class="btn btn-primary" href="contact.html">Contact Me</a>
+    <section class="section">
+      <div class="container">
+        <div class="panel">
+          <h2 class="section-title">Next Step</h2>
+          <p class="section-subtitle">See the Bio page for role-based examples</p>
+          <p>
+            The Bio page gives the career proof behind this working style across General Motors, Civix, Walt Disney World, OCPS, LSQ, and other environments.
+          </p>
+
+          <div class="button-row">
+            <a class="btn btn-primary" href="bio.html">Go to Bio</a>
+            <a class="btn btn-secondary" href="contact.html">Contact Me</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© 2026 Raquel Dillon</p>
-      <p>Senior QA Professional</p>
+    <div class="container">
+      <span>© 2026 Raquel Dillon</span>
+      <span class="footer-role">Senior QA Professional.</span>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
