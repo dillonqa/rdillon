@@ -6,30 +6,30 @@
   <title>Raquel Dillon | Bio</title>
   <meta
     name="description"
-    content="Professional background and selected QA leadership experience across enterprise platforms."
+    content="Professional background and selected experience for Raquel Dillon, Senior QA Professional."
   />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand-wrap" href="index.html" aria-label="Raquel Dillon home">
-        <img class="profile-thumb" src="profile.jpg" alt="Raquel Dillon" />
-        <div class="brand-block">
-          <span class="brand-name">Raquel Dillon</span>
-          <span class="brand-role">Senior QA Professional</span>
-        </div>
-      </a>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Raquel Dillon</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="site-nav" id="siteNav">
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a class="active" href="bio.html">Bio</a>
+        <a href="bio.html" class="active">Bio</a>
         <a href="valueplan.html">Value Plan</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -37,52 +37,51 @@
   </header>
 
   <main>
-    <section class="hero hero-page">
-      <div class="container">
-        <div class="page-intro">
-          <p class="eyebrow">Bio</p>
-          <h1>Senior QA leadership shaped by enterprise delivery, validation depth, and business alignment.</h1>
-          <p class="hero-copy narrow-copy">
-            I am a Senior QA professional with experience across enterprise platforms in automotive, government, hospitality, education, financial services, and digital media. My work blends QA leadership and business analysis support across requirements review, validation execution, defect follow-through, stakeholder coordination, and release readiness.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="proof-band">
-      <div class="container proof-grid">
-        <div class="proof-item">
-          <span class="proof-kicker">Target Roles</span>
-          <p>QA Lead • Senior QA Lead • UAT Lead • Senior QA Analyst • Test Lead • Senior QA Engineer • Integration Test Lead • ERP QA Lead • QA/UAT Test Coordinator • Business Analyst</p>
-        </div>
-        <div class="proof-item">
-          <span class="proof-kicker">Industry Reach</span>
-          <p>Automotive, government, hospitality, education, financial services, and digital media.</p>
-        </div>
-        <div class="proof-item">
-          <span class="proof-kicker">Platform Reach</span>
-          <p>SAP ERP, SAP HANA, SAP HR, SAP SuccessFactors, Oracle Fusion Cloud, Workday, Salesforce, PeopleSoft, Microsoft Dynamics 365, and Skyward SIS.</p>
-        </div>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Bio</p>
+        <h1>Professional background and selected experience</h1>
+        <p class="lede center-text">
+          I am a Senior QA professional with experience across enterprise platforms in automotive,
+          government, hospitality, education, financial services, and digital media. My work blends
+          QA leadership and business analysis support across requirements review, validation execution,
+          defect follow-through, stakeholder coordination, and release readiness.
+        </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Career Highlights</p>
+          <p class="section-kicker">Industry & Platform Reach</p>
+          <h2>Broad experience across regulated, operational, and customer-facing systems</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            My background includes work across enterprise environments such as SAP ERP, SAP HANA,
+            SAP HR, SAP SuccessFactors, Oracle Fusion Cloud, Workday, Salesforce, PeopleSoft,
+            Microsoft Dynamics 365, and Skyward SIS. I have supported validation efforts tied to
+            workflows, data integrity, reporting accuracy, system integrations, and business process alignment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Career Highlights</p>
           <h2>Selected roles</h2>
         </div>
 
-        <div class="bio-stack">
-          <article class="bio-entry">
-            <div class="bio-entry-head">
-              <div>
-                <span class="experience-company">General Motors</span>
-                <h3>Dealer Sales Solution Testing Lead</h3>
-              </div>
-              <span class="entry-date">Aug 2022 – Jan 2025</span>
+        <div class="stack-grid">
+          <article class="timeline-card">
+            <div class="timeline-head">
+              <h3>General Motors</h3>
+              <p>Dealer Sales Solution Testing Lead | Aug 2022 – Jan 2025</p>
             </div>
-            <ul class="feature-list">
+            <ul class="clean-list">
               <li>Reviewed rollout requirements, confirmed business scope and testability, and supported downstream deployment readiness.</li>
               <li>Led UAT, integration testing, and API testing across dealer and B2B vendor platforms.</li>
               <li>Investigated technical issues through failure reproduction, request-response review, impact confirmation, and fix verification.</li>
@@ -90,15 +89,12 @@
             </ul>
           </article>
 
-          <article class="bio-entry">
-            <div class="bio-entry-head">
-              <div>
-                <span class="experience-company">Civix</span>
-                <h3>Senior QA Project Lead</h3>
-              </div>
-              <span class="entry-date">Sept 2020 – Jun 2022</span>
+          <article class="timeline-card">
+            <div class="timeline-head">
+              <h3>Civix</h3>
+              <p>Senior QA Project Lead | Sept 2020 – Jun 2022</p>
             </div>
-            <ul class="feature-list">
+            <ul class="clean-list">
               <li>Coordinated validation across large-scale SaaS web and mobile applications for government agencies.</li>
               <li>Served as Scrum QA Lead, tracking regression progress, surfacing delivery risks, and supporting dependency follow-through.</li>
               <li>Validated backend workflows with SQL checks and API testing in Postman.</li>
@@ -106,15 +102,12 @@
             </ul>
           </article>
 
-          <article class="bio-entry">
-            <div class="bio-entry-head">
-              <div>
-                <span class="experience-company">Walt Disney World</span>
-                <h3>Senior QA / BA Lead</h3>
-              </div>
-              <span class="entry-date">Oct 2019 – Apr 2020</span>
+          <article class="timeline-card">
+            <div class="timeline-head">
+              <h3>Walt Disney World</h3>
+              <p>Senior QA / BA Lead | Oct 2019 – Apr 2020</p>
             </div>
-            <ul class="feature-list">
+            <ul class="clean-list">
               <li>Partnered with Revenue Management to validate pricing logic, rate configurations, and reporting accuracy.</li>
               <li>Maintained requirements traceability from intake through fulfillment.</li>
               <li>Created test plans tied to configuration stability, report accuracy, and data integrity.</li>
@@ -122,15 +115,12 @@
             </ul>
           </article>
 
-          <article class="bio-entry">
-            <div class="bio-entry-head">
-              <div>
-                <span class="experience-company">Orange County Public Schools</span>
-                <h3>QA Lead / UAT Project Facilitator</h3>
-              </div>
-              <span class="entry-date">May 2019 – Oct 2019</span>
+          <article class="timeline-card">
+            <div class="timeline-head">
+              <h3>Orange County Public Schools</h3>
+              <p>QA Lead / UAT Project Facilitator | May 2019 – Oct 2019</p>
             </div>
-            <ul class="feature-list">
+            <ul class="clean-list">
               <li>Led test planning and UAT coordination for ERP modernization across PeopleSoft and Skyward.</li>
               <li>Managed requirements scope, QA deliverables, and traceability.</li>
               <li>Managed defect lifecycles in Jira and supported issue resolution through detailed follow-through.</li>
@@ -138,15 +128,12 @@
             </ul>
           </article>
 
-          <article class="bio-entry">
-            <div class="bio-entry-head">
-              <div>
-                <span class="experience-company">LSQ Funding</span>
-                <h3>Senior QA Lead</h3>
-              </div>
-              <span class="entry-date">Mar 2015 – May 2016</span>
+          <article class="timeline-card">
+            <div class="timeline-head">
+              <h3>LSQ Funding</h3>
+              <p>Senior QA Lead | Mar 2015 – May 2016</p>
             </div>
-            <ul class="feature-list">
+            <ul class="clean-list">
               <li>Led SIT and UAT for financial applications supporting cash flow and invoicing workflows.</li>
               <li>Created test strategies, test plans, and test cases using a risk-based testing approach.</li>
               <li>Performed functional, integration, regression, mobile, and API testing.</li>
@@ -154,44 +141,74 @@
             </ul>
           </article>
 
-          <article class="bio-entry">
-            <div class="bio-entry-head">
-              <div>
-                <span class="experience-company">Additional Experience</span>
-                <h3>Walt Disney World | Digicel PlayGo | Florida Virtual School</h3>
-              </div>
+          <article class="timeline-card">
+            <div class="timeline-head">
+              <h3>Walt Disney World</h3>
+              <p>Senior Tech Specialist | Nov 2002 – Jan 2015</p>
             </div>
-            <ul class="feature-list">
-              <li>Supported mobile, web, e-commerce, streaming, and subscription validation across customer-facing applications.</li>
-              <li>Performed functional, regression, integration, cross-browser, SQL, and API testing to validate workflows and system behavior.</li>
-              <li>Applied AI-assisted support to strengthen requirements analysis, test scenarios, edge-case thinking, and QA summaries where useful.</li>
+            <ul class="clean-list">
+              <li>Led QA strategy and end-to-end delivery across enterprise platforms supporting parks, hotels, transportation, cruise, POS, finance, and HR systems.</li>
+              <li>Led blended QA support across manual and automation efforts, including task oversight, defect triage, and knowledge sharing.</li>
+              <li>Managed test planning and execution for high-visibility enterprise releases.</li>
+              <li>Supported SAP HR and Workday HR modules with backend SQL checks and cross-system validation.</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-cta">
-      <div class="container cta-shell">
-        <div>
-          <p class="eyebrow">How I Work</p>
-          <h2>Practical QA support tied to business needs</h2>
-          <p class="cta-copy">
-            I work best in environments where quality needs to be visible, traceable, and grounded in real business impact. My approach is built around requirements clarity, testability, structured execution, defect follow-through, validation evidence, and close coordination with business, product, development, and project teams.
-          </p>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Additional Experience</p>
+          <h2>Supporting web, mobile, e-commerce, and streaming workflows</h2>
         </div>
 
-        <div class="hero-actions">
-          <a class="button button-beige" href="valueplan.html">View Value Plan</a>
+        <div class="card-grid two-up">
+          <article class="card">
+            <h3>Digicel PlayGo</h3>
+            <p>
+              Supported mobile, web, e-commerce, streaming, and subscription validation across
+              customer-facing applications.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Florida Virtual School</h3>
+            <p>
+              Performed functional, regression, integration, cross-browser, SQL, and API testing
+              to validate workflows and system behavior.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">How I Work</p>
+          <h2>Practical QA support tied to business needs</h2>
+        </div>
+        <p class="center-text">
+          I work best in environments where quality needs to be visible, traceable, and grounded
+          in real business impact. My approach is built around requirements clarity, testability,
+          structured execution, defect follow-through, validation evidence, and close coordination
+          with business, product, development, and project teams.
+        </p>
+
+        <div class="cta-row center">
+          <a class="btn btn-secondary" href="valueplan.html">See My Approach</a>
+          <a class="btn btn-primary" href="contact.html">Contact</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-wrap">
       <p>© 2026 Raquel Dillon</p>
-      <p>Senior QA Professional.</p>
+      <p>Senior QA Professional</p>
     </div>
   </footer>
 
