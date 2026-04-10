@@ -6,111 +6,115 @@
   <title>Raquel Dillon | Contact</title>
   <meta
     name="description"
-    content="Contact Raquel Dillon regarding QA leadership, UAT, SIT, integration testing, and related opportunities."
+    content="Contact Raquel Dillon about QA leadership, UAT, SIT, integration testing, and related opportunities."
   />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand-wrap" href="index.html" aria-label="Raquel Dillon home">
-        <img class="profile-thumb" src="profile.jpg" alt="Raquel Dillon" />
-        <div class="brand-block">
-          <span class="brand-name">Raquel Dillon</span>
-          <span class="brand-role">Senior QA Professional</span>
-        </div>
-      </a>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Raquel Dillon</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="site-nav" id="siteNav">
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="bio.html">Bio</a>
         <a href="valueplan.html">Value Plan</a>
-        <a class="active" href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-page">
-      <div class="container">
-        <div class="page-intro">
-          <p class="eyebrow">Contact</p>
-          <h1>Let’s connect.</h1>
-          <p class="hero-copy narrow-copy">
-            If you would like to connect about QA leadership, testing support, or related opportunities, you can reach me using the information below.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="proof-band">
-      <div class="container proof-grid">
-        <div class="proof-item">
-          <span class="proof-kicker">Target Roles</span>
-          <p>QA Lead • Senior QA Lead • UAT Lead • Senior QA Analyst • Test Lead • Senior QA Engineer • Integration Test Lead • ERP QA Lead • QA/UAT Test Coordinator • Business Analyst</p>
-        </div>
-        <div class="proof-item">
-          <span class="proof-kicker">Contact</span>
-          <p>DillonQA@gmail.com and LinkedIn for professional opportunities and role-related conversations.</p>
-        </div>
-        <div class="proof-item">
-          <span class="proof-kicker">Location</span>
-          <p>Florida/Georgia</p>
-        </div>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s connect</h1>
+        <p class="lede center-text">
+          If you would like to connect about QA leadership, testing support, UAT, SIT,
+          integration testing, or related opportunities, you can reach me using the options below.
+        </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="contact-shell">
-          <div class="contact-panel">
-            <p class="eyebrow">Contact Information</p>
+        <div class="card-grid two-up">
+          <article class="card contact-card">
+            <h2>Email</h2>
+            <p>For role conversations, recruiter outreach, or hiring manager follow-up.</p>
+            <a class="btn btn-primary full-width" href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
+          </article>
 
-            <div class="contact-line">
-              <span class="contact-label">Email</span>
-              <a href="mailto:DillonQA@gmail.com">DillonQA@gmail.com</a>
-            </div>
+          <article class="card contact-card">
+            <h2>LinkedIn</h2>
+            <p>For profile review, experience highlights, and direct connection.</p>
+            <a
+              class="btn btn-secondary full-width"
+              href="https://www.linkedin.com/in/raquel-dillon-b1bba695/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View LinkedIn
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <div class="contact-line">
-              <span class="contact-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/raquel-dillon-b1bba695/" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/raquel-dillon-b1bba695
-              </a>
-            </div>
+    <section class="section section-tinted">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">Role Alignment</p>
+          <h2>Best fit for roles such as</h2>
+        </div>
 
-            <div class="contact-line">
-              <span class="contact-label">Location</span>
-              <span>Florida/Georgia</span>
-            </div>
-          </div>
+        <div class="chip-wrap center-chips">
+          <span class="chip">QA Lead</span>
+          <span class="chip">Senior QA Lead</span>
+          <span class="chip">UAT Lead</span>
+          <span class="chip">Senior QA Analyst</span>
+          <span class="chip">Test Lead</span>
+          <span class="chip">Senior QA Engineer</span>
+          <span class="chip">Integration Test Lead</span>
+          <span class="chip">ERP QA Lead</span>
+          <span class="chip">QA/UAT Test Coordinator</span>
+          <span class="chip">Business Analyst</span>
+        </div>
+      </div>
+    </section>
 
-          <div class="contact-panel contact-panel-accent">
-            <p class="eyebrow">Quick Navigation</p>
-            <h2>Visit the rest of the site</h2>
-            <p>
-              Review the Bio page for professional background and selected experience, or the Value Plan page for how I approach quality, delivery support, and release readiness.
-            </p>
+    <section class="section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">Quick Navigation</p>
+          <h2>Visit the rest of the site</h2>
+        </div>
 
-            <div class="hero-actions">
-              <a class="button" href="bio.html">Bio</a>
-              <a class="button" href="valueplan.html">Value Plan</a>
-            </div>
-          </div>
+        <div class="cta-row center">
+          <a class="btn btn-secondary" href="index.html">Home</a>
+          <a class="btn btn-secondary" href="bio.html">Bio</a>
+          <a class="btn btn-secondary" href="valueplan.html">Value Plan</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-wrap">
       <p>© 2026 Raquel Dillon</p>
-      <p>Senior QA Professional.</p>
+      <p>Senior QA Professional</p>
     </div>
   </footer>
 
