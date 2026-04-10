@@ -1,652 +1,180 @@
-:root {
-  --bg: #f7f2ea;
-  --bg-soft: #fbf8f2;
-  --surface: #fffdf9;
-  --surface-alt: #f2e9dc;
-  --surface-dark: #132a45;
-  --text: #16202c;
-  --text-soft: #5d6774;
-  --text-inverse: #f8f4ee;
-  --heading: #0f1d2d;
-  --line: #ddd2be;
-  --line-soft: #eadfce;
-  --accent: #b58a52;
-  --accent-deep: #8e6838;
-  --blue-dark: #18365a;
-  --blue-darker: #102844;
-  --shadow-soft: 0 10px 24px rgba(15, 29, 45, 0.06);
-  --shadow-medium: 0 18px 42px rgba(15, 29, 45, 0.10);
-  --radius-lg: 28px;
-  --radius-md: 18px;
-  --radius-sm: 12px;
-  --max-width: 1180px;
-  --max-text: 760px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
-  color: var(--text);
-  line-height: 1.65;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-a {
-  color: var(--heading);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent-deep);
-}
-
-.container {
-  width: min(calc(100% - 36px), var(--max-width));
-  margin: 0 auto;
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(251, 248, 242, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(221, 210, 190, 0.92);
-}
-
-.header-inner {
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.brand-wrap {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  color: inherit;
-  min-width: 0;
-}
-
-.profile-thumb {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(181, 138, 82, 0.35);
-  box-shadow: var(--shadow-soft);
-  background: #efe7db;
-  flex-shrink: 0;
-}
-
-.brand-block {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-
-.brand-name {
-  font-size: 1.03rem;
-  font-weight: 800;
-  color: var(--heading);
-  letter-spacing: 0.01em;
-}
-
-.brand-role {
-  font-size: 0.86rem;
-  color: var(--text-soft);
-  font-weight: 700;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.site-nav a {
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-weight: 700;
-  color: var(--text-soft);
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.site-nav a:hover,
-.site-nav a.active {
-  color: var(--heading);
-  background: rgba(181, 138, 82, 0.12);
-}
-
-.menu-toggle {
-  display: none;
-  width: 46px;
-  height: 46px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  border-radius: 12px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  height: 2px;
-  margin: 6px 0;
-  background: var(--heading);
-  border-radius: 999px;
-}
-
-.hero {
-  padding: 56px 0 34px;
-}
-
-.hero-home {
-  background:
-    radial-gradient(circle at top right, rgba(181, 138, 82, 0.14), transparent 30%),
-    linear-gradient(135deg, #f8f3ea 0%, #fbf8f2 55%, #efe4d4 100%);
-  border-bottom: 1px solid rgba(221, 210, 190, 0.78);
-}
-
-.hero-page {
-  background:
-    radial-gradient(circle at top right, rgba(181, 138, 82, 0.10), transparent 26%),
-    linear-gradient(180deg, #f8f3ea 0%, #fbf8f2 100%);
-  border-bottom: 1px solid rgba(221, 210, 190, 0.78);
-}
-
-.hero-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.75fr);
-  gap: 28px;
-  align-items: start;
-}
-
-.hero-content {
-  max-width: 840px;
-}
-
-.page-intro {
-  max-width: 980px;
-}
-
-.eyebrow {
-  margin: 0 0 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  font-size: 0.76rem;
-  font-weight: 800;
-  color: var(--accent-deep);
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  color: var(--heading);
-}
-
-h1 {
-  font-size: clamp(2.35rem, 4.5vw, 4.7rem);
-  line-height: 1.03;
-  letter-spacing: -0.045em;
-  max-width: 11.5ch;
-}
-
-.hero-page h1 {
-  max-width: 15ch;
-}
-
-h2 {
-  font-size: clamp(1.55rem, 2.6vw, 2.3rem);
-  line-height: 1.14;
-  letter-spacing: -0.03em;
-}
-
-h3 {
-  font-size: 1.08rem;
-  line-height: 1.3;
-}
-
-.hero-copy,
-.proof-item p,
-.statement-card p,
-.experience-card p,
-.bio-entry p,
-.single-panel p,
-.timeline-card p,
-.contact-panel p,
-.cta-copy {
-  margin: 0;
-  color: var(--text-soft);
-}
-
-.hero-copy {
-  margin-top: 18px;
-  font-size: 1rem;
-  max-width: 64ch;
-}
-
-.narrow-copy {
-  max-width: 70ch;
-}
-
-.hero-panel {
-  display: flex;
-}
-
-.hero-panel-inner {
-  width: 100%;
-  padding: 28px;
-  background: var(--surface-dark);
-  color: var(--text-inverse);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-medium);
-  border: 1px solid rgba(181, 138, 82, 0.24);
-}
-
-.panel-label {
-  margin: 0 0 14px;
-  color: #e3c597;
-  font-size: 0.78rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-}
-
-.hero-panel .feature-list {
-  color: var(--text-inverse);
-}
-
-.hero-actions,
-.section-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.button {
-  min-height: 48px;
-  padding: 0 18px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  border: 1px solid var(--blue-dark);
-  background: var(--blue-dark);
-  color: var(--accent);
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-.button:hover {
-  background: var(--blue-darker);
-  color: var(--accent);
-  border-color: var(--blue-darker);
-}
-
-.proof-band {
-  padding: 0 0 18px;
-}
-
-.proof-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: -12px;
-}
-
-.proof-item {
-  background: rgba(255, 253, 249, 0.96);
-  border: 1px solid rgba(221, 210, 190, 0.95);
-  border-radius: var(--radius-md);
-  padding: 20px 22px;
-  box-shadow: var(--shadow-soft);
-}
-
-.proof-kicker {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 0.76rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent-deep);
-}
-
-.section {
-  padding: 46px 0;
-}
-
-.section-contrast {
-  background: linear-gradient(180deg, rgba(239, 228, 212, 0.32) 0%, rgba(248, 243, 234, 0.16) 100%);
-  border-top: 1px solid rgba(221, 210, 190, 0.55);
-  border-bottom: 1px solid rgba(221, 210, 190, 0.55);
-}
-
-.section-cta {
-  padding-top: 30px;
-  padding-bottom: 54px;
-}
-
-.section-heading {
-  margin-bottom: 24px;
-}
-
-.editorial-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.statement-card {
-  background: rgba(255, 253, 249, 0.92);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  box-shadow: var(--shadow-soft);
-}
-
-.statement-card h3 {
-  margin-bottom: 10px;
-}
-
-.experience-strip {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.experience-card {
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  box-shadow: var(--shadow-soft);
-}
-
-.experience-company {
-  display: inline-block;
-  margin-bottom: 10px;
-  color: var(--accent-deep);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.single-panel {
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-md);
-  padding: 26px;
-  box-shadow: var(--shadow-soft);
-}
-
-.text-link {
-  font-weight: 800;
-  color: var(--heading);
-}
-
-.text-link:hover {
-  color: var(--accent-deep);
-}
-
-.bio-stack {
-  display: grid;
-  gap: 18px;
-}
-
-.bio-entry {
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  box-shadow: var(--shadow-soft);
-}
-
-.bio-entry-head {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: flex-start;
-  margin-bottom: 14px;
-}
-
-.entry-date {
-  white-space: nowrap;
-  color: var(--text-soft);
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.timeline-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.timeline-card {
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  box-shadow: var(--shadow-soft);
-}
-
-.timeline-step {
-  display: inline-block;
-  margin-bottom: 10px;
-  color: var(--accent-deep);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.timeline-card h3 {
-  margin-bottom: 8px;
-}
-
-.timeline-card p {
-  font-size: 0.88rem;
-  line-height: 1.45;
-  margin: 0 0 14px;
-}
-
-.feature-list {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.feature-list li + li {
-  margin-top: 8px;
-}
-
-.contact-shell {
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: 18px;
-}
-
-.contact-panel {
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius-lg);
-  padding: 28px;
-  box-shadow: var(--shadow-soft);
-}
-
-.contact-panel-accent {
-  background: linear-gradient(145deg, #fffaf2 0%, #f1e5d2 100%);
-  border-color: rgba(181, 138, 82, 0.3);
-}
-
-.contact-line {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 14px;
-  padding: 16px 0;
-  border-bottom: 1px solid rgba(221, 210, 190, 0.65);
-}
-
-.contact-line:last-child {
-  border-bottom: 0;
-}
-
-.contact-label {
-  font-weight: 800;
-  color: var(--heading);
-}
-
-.contact-line a {
-  font-weight: 700;
-  word-break: break-word;
-}
-
-.cta-shell {
-  background: var(--surface-dark);
-  color: var(--text-inverse);
-  border-radius: var(--radius-lg);
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 22px 28px;
-  align-items: center;
-  box-shadow: var(--shadow-medium);
-}
-
-.cta-shell h2 {
-  color: var(--text-inverse);
-}
-
-.cta-shell .cta-copy {
-  color: rgba(248, 244, 238, 0.84);
-  max-width: 68ch;
-}
-
-.cta-shell .eyebrow {
-  color: #e3c597;
-}
-
-.site-footer {
-  border-top: 1px solid rgba(221, 210, 190, 0.88);
-  background: #f3ecdf;
-}
-
-.footer-inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 12px 24px;
-  padding: 24px 0 28px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--heading);
-}
-
-@media (max-width: 980px) {
-  .hero-layout,
-  .proof-grid,
-  .editorial-grid,
-  .experience-strip,
-  .timeline-grid,
-  .contact-shell {
-    grid-template-columns: 1fr;
-  }
-
-  .bio-entry-head {
-    flex-direction: column;
-  }
-
-  .menu-toggle {
-    display: inline-block;
-  }
-
-  .site-nav {
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 18px;
-    left: 18px;
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    padding: 14px;
-    background: rgba(255, 253, 249, 0.98);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    box-shadow: var(--shadow-medium);
-  }
-
-  .site-nav.show {
-    display: flex;
-  }
-
-  .site-nav a {
-    padding: 12px 14px;
-    border-radius: 12px;
-  }
-}
-
-@media (max-width: 720px) {
-  .hero {
-    padding-top: 48px;
-    padding-bottom: 24px;
-  }
-
-  h1 {
-    max-width: none;
-    font-size: clamp(2rem, 8vw, 3rem);
-    line-height: 1.04;
-  }
-
-  .hero-page h1 {
-    max-width: none;
-  }
-
-  .hero-panel-inner,
-  .statement-card,
-  .experience-card,
-  .single-panel,
-  .bio-entry,
-  .timeline-card,
-  .contact-panel,
-  .cta-shell {
-    padding: 22px;
-  }
-
-  .contact-line {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-  }
-
-  .profile-thumb {
-    width: 48px;
-    height: 48px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raquel Dillon | Senior QA Professional</title>
+  <meta
+    name="description"
+    content="Senior QA Lead with experience across SIT, UAT, integration testing, API testing, SQL validation, data validation, requirements traceability, and release readiness."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-wrap" href="index.html" aria-label="Raquel Dillon home">
+        <img class="profile-thumb" src="profile.jpg" alt="Raquel Dillon" />
+        <div class="brand-block">
+          <span class="brand-name">Raquel Dillon</span>
+          <span class="brand-role">Senior QA Lead</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a class="active" href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="valueplan.html">Value Plan</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Senior QA Lead | UAT | SIT | Integration Testing</p>
+          <h1>QA leadership for complex systems, cross-functional delivery, and release readiness.</h1>
+          <p class="hero-copy">
+            I bring experience across automotive, government, hospitality, education, financial services, and digital media environments. My background combines QA leadership and business analysis support across requirements review, validation execution, stakeholder coordination, defect follow-through, and release readiness.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="bio.html">View Bio</a>
+            <a class="button" href="valueplan.html">View Value Plan</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="hero-panel-inner">
+            <p class="panel-label">Core Focus</p>
+            <ul class="feature-list">
+              <li>SIT and UAT leadership</li>
+              <li>API testing and SQL validation</li>
+              <li>Data validation and reconciliation</li>
+              <li>Requirements traceability</li>
+              <li>Release readiness support</li>
+              <li>Cross-functional coordination</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="proof-band">
+      <div class="container proof-grid">
+        <div class="proof-item">
+          <span class="proof-kicker">Target Roles</span>
+          <p>Senior QA Lead, QA Lead, Senior QA Analyst, UAT Lead, SIT Lead, Test Lead</p>
+        </div>
+        <div class="proof-item">
+          <span class="proof-kicker">Core Strengths</span>
+          <p>QA leadership, business analysis support, validation execution, delivery visibility</p>
+        </div>
+        <div class="proof-item">
+          <span class="proof-kicker">Technical Depth</span>
+          <p>API testing, SQL validation, ETL testing, data reconciliation, workflow validation</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What I Bring</p>
+          <h2>Strong QA support tied to business needs and real delivery work</h2>
+        </div>
+
+        <div class="editorial-grid">
+          <article class="statement-card">
+            <h3>QA leadership</h3>
+            <p>Test planning, execution support, defect management, QA reporting, sprint support, and release readiness coordination.</p>
+          </article>
+
+          <article class="statement-card">
+            <h3>Business analysis support</h3>
+            <p>Requirements clarification, user story review, acceptance criteria support, scope alignment, and traceability tied to downstream validation.</p>
+          </article>
+
+          <article class="statement-card">
+            <h3>API, data, and workflow validation</h3>
+            <p>API testing, SQL validation, ETL testing, data reconciliation, request-response review, and connected workflow checks.</p>
+          </article>
+
+          <article class="statement-card">
+            <h3>Release readiness support</h3>
+            <p>Evidence-based validation, issue follow-through, delivery visibility, and coordination with business, product, development, and project teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contrast">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Experience</p>
+          <h2>Examples of the environments and delivery work I support</h2>
+        </div>
+
+        <div class="experience-strip">
+          <article class="experience-card">
+            <span class="experience-company">General Motors</span>
+            <h3>Dealer Sales Solution Testing Lead</h3>
+            <p>Supported rollout requirements, UAT, integration testing, API testing, finance workflow checks, and release readiness across dealer and vendor platforms.</p>
+          </article>
+
+          <article class="experience-card">
+            <span class="experience-company">Civix</span>
+            <h3>Senior QA Project Lead</h3>
+            <p>Coordinated SaaS validation for government-focused web and mobile applications, including regression visibility, accessibility testing, SQL checks, API testing, and delivery reporting.</p>
+          </article>
+
+          <article class="experience-card">
+            <span class="experience-company">Walt Disney World</span>
+            <h3>Senior QA / BA Lead and Senior Tech Specialist</h3>
+            <p>Supported enterprise validation across pricing, analytics, operations, transportation, HR, finance, POS, and resort workflows through QA strategy, SQL review, ETL testing, and traceability.</p>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="text-link" href="bio.html">See full career highlights</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container cta-shell">
+        <div>
+          <p class="eyebrow">Next Steps</p>
+          <h2>See the background, the working style, or connect directly</h2>
+          <p class="cta-copy">
+            Visit the Bio page for role-based highlights, the Value Plan page for how I approach quality and delivery support, or the Contact page to connect.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button" href="bio.html">Bio</a>
+          <a class="button" href="valueplan.html">Value Plan</a>
+          <a class="button" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Raquel Dillon</p>
+      <p>Senior QA Lead | UAT | SIT | Integration Testing | API Testing</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
