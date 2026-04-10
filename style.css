@@ -7,8 +7,9 @@ html {
 }
 
 :root {
-  --bg-page: #f5f7fb;
-  --bg-soft: #edf2f9;
+  --bg-page: #f4f7fb;
+  --bg-soft: #e6eef8;
+  --bg-strong: #d6e5f7;
   --white: #ffffff;
 
   --text-main: #1e2430;
@@ -19,7 +20,8 @@ html {
 
   --blue-dark: #163b73;
   --blue-darker: #0f2d59;
-  --blue-soft: #eef4ff;
+  --blue-soft: #edf5ff;
+  --blue-mid: #cfe0f6;
 
   --border: #d6dfeb;
   --border-soft: #e7edf5;
@@ -30,7 +32,7 @@ html {
   --radius-lg: 16px;
   --radius-pill: 999px;
 
-  --section-space: 64px;
+  --section-space: 52px;
   --card-padding: 24px;
 }
 
@@ -141,73 +143,80 @@ h3 {
 
 .hero {
   background: linear-gradient(180deg, var(--blue-soft) 0%, var(--bg-page) 100%);
-  padding: 72px 0 56px;
+  padding: 44px 0 34px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.45fr 0.95fr;
-  gap: 28px;
+  grid-template-columns: 1.65fr 0.8fr;
+  gap: 22px;
   align-items: start;
+}
+
+.hero-main {
+  padding-right: 8px;
 }
 
 .hero-side {
   display: grid;
-  gap: 20px;
+  gap: 16px;
+}
+
+.compact-profile {
+  padding: 12px;
 }
 
 .profile-card {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 16px;
   box-shadow: var(--shadow-strong);
 }
 
 .profile-photo {
   width: 100%;
-  max-width: 320px;
+  max-width: 190px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 12px;
   margin: 0 auto;
 }
 
 .page-hero {
   background: linear-gradient(180deg, var(--blue-soft) 0%, var(--bg-page) 100%);
-  padding: 64px 0 32px;
+  padding: 50px 0 24px;
 }
 
 .eyebrow {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #4f678a;
+  color: #456387;
   font-weight: 700;
 }
 
 h1 {
-  margin: 0 0 16px;
-  font-size: clamp(2rem, 4vw, 3.35rem);
-  line-height: 1.15;
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1.12;
 }
 
 h2 {
-  margin: 0 0 14px;
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  margin: 0 0 12px;
+  font-size: clamp(1.55rem, 2vw, 2.1rem);
   line-height: 1.2;
 }
 
 h3 {
   margin: 0 0 12px;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   line-height: 1.3;
 }
 
 .hero-text,
 .page-intro {
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   color: var(--text-body);
   max-width: 760px;
   margin-bottom: 0;
@@ -217,7 +226,7 @@ h3 {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: var(--card-padding);
+  padding: 20px;
   box-shadow: var(--shadow-strong);
 }
 
@@ -227,7 +236,7 @@ h3 {
   color: var(--text-light);
   padding: 8px 14px;
   border-radius: var(--radius-pill);
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   font-size: 1rem;
 }
 
@@ -239,8 +248,12 @@ h3 {
   background: var(--bg-soft);
 }
 
+.section-alt-strong {
+  background: var(--bg-strong);
+}
+
 .section-heading {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .section-heading .eyebrow {
@@ -332,7 +345,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 24px;
+  margin-top: 22px;
 }
 
 .btn {
@@ -362,13 +375,24 @@ h3 {
   color: var(--white);
 }
 
+.btn-secondary-light {
+  background: transparent;
+  color: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+
+.btn-secondary-light:hover {
+  background: var(--blue-dark);
+  color: var(--white);
+}
+
 .text-link {
   font-weight: 700;
 }
 
 .center-top-space {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .pill-group {
@@ -381,7 +405,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   background: var(--white);
-  border: 1px solid #ccd8e7;
+  border: 1px solid #c7d7ea;
   color: #213754;
   border-radius: var(--radius-pill);
   padding: 10px 14px;
@@ -396,7 +420,7 @@ h3 {
 }
 
 .clean-list li {
-  padding: 10px 0;
+  padding: 9px 0;
   border-bottom: 1px solid var(--border-soft);
 }
 
@@ -432,7 +456,7 @@ h3 {
 }
 
 .site-footer {
-  background: #12263f;
+  background: #10233b;
   color: #dbe7f5;
   padding: 22px 0;
 }
@@ -452,9 +476,14 @@ h3 {
   margin: 0;
 }
 
+@media (max-width: 1080px) {
+  .four-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 980px) {
   .hero-grid,
-  .four-up,
   .three-up,
   .two-up,
   .cta-box {
@@ -467,7 +496,7 @@ h3 {
   }
 
   .profile-photo {
-    max-width: 260px;
+    max-width: 160px;
   }
 }
 
@@ -504,6 +533,12 @@ h3 {
   .page-hero {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .four-up,
+  .three-up,
+  .two-up {
+    grid-template-columns: 1fr;
   }
 
   h1 {
