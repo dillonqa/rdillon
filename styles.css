@@ -359,15 +359,20 @@ main {
 }
 
 .note-box {
-  margin-top: 1.15rem;
-  padding: 1rem 1.1rem;
+  margin-top: 0.4rem;
+  padding: 1.15rem 1.2rem;
   border-left: 4px solid var(--brown);
   background: linear-gradient(180deg, #f2e7da 0%, #ecdfd0 100%);
   border-radius: 14px;
+  box-shadow: var(--shadow-soft);
 }
 
 .note-box p {
-  margin: 0.45rem 0 0;
+  margin: 0;
+}
+
+.note-box .button-row {
+  margin-top: 1rem;
 }
 
 .text-link {
