@@ -59,9 +59,10 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(250, 247, 242, 0.94);
+  background: linear-gradient(180deg, #efe3d3 0%, #e6d7c4 100%);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(22, 50, 79, 0.08);
+  border-bottom: 1px solid rgba(22, 50, 79, 0.14);
+  box-shadow: 0 6px 18px rgba(29, 45, 68, 0.06);
 }
 
 .header-inner {
@@ -152,6 +153,19 @@ main {
 
 .hero-card {
   padding: 2.25rem;
+}
+
+.profile-photo-wrap {
+  margin: 0 0 1rem;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 24px rgba(29, 45, 68, 0.12);
 }
 
 .eyebrow {
@@ -348,7 +362,7 @@ main {
 
 .phase-subtitle {
   margin: 0 0 0.85rem;
-  color: var(--navy);
+  color: var(--brown);
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -358,8 +372,16 @@ main {
   padding-left: 1.1rem;
 }
 
+.section-card {
+  padding: 1.25rem;
+}
+
+.section-card .section-title {
+  margin-bottom: 0.85rem;
+}
+
 .note-box {
-  margin-top: 0.4rem;
+  margin-top: 0;
   padding: 1.15rem 1.2rem;
   border-left: 4px solid var(--brown);
   background: linear-gradient(180deg, #f2e7da 0%, #ecdfd0 100%);
@@ -396,10 +418,11 @@ main {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(22, 50, 79, 0.08);
+  border-top: 1px solid rgba(22, 50, 79, 0.14);
   padding: 1.35rem 0 2rem;
   text-align: center;
   color: var(--muted);
+  background: linear-gradient(180deg, #e6d7c4 0%, #dcc9b2 100%);
 }
 
 .site-footer p {
