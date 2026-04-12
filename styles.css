@@ -12,6 +12,7 @@
   --border: rgba(22, 50, 79, 0.12);
   --shadow: 0 14px 34px rgba(29, 45, 68, 0.08);
   --shadow-soft: 0 8px 18px rgba(29, 45, 68, 0.05);
+  --header-footer-shadow: 0 10px 24px rgba(29, 45, 68, 0.08);
   --radius-lg: 22px;
   --radius-md: 16px;
   --max-width: 1160px;
@@ -62,7 +63,7 @@ a:hover {
   background: linear-gradient(180deg, #fcfaf7 0%, #f9f5ef 100%);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(22, 50, 79, 0.08);
-  box-shadow: 0 4px 12px rgba(29, 45, 68, 0.04);
+  box-shadow: var(--header-footer-shadow);
 }
 
 .header-inner {
@@ -423,6 +424,7 @@ main {
   text-align: center;
   color: var(--muted);
   background: linear-gradient(180deg, #faf6f0 0%, #f7f1e9 100%);
+  box-shadow: 0 -10px 24px rgba(29, 45, 68, 0.06);
 }
 
 .site-footer p {
