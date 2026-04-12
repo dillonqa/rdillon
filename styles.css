@@ -59,7 +59,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(180deg, #efe3d3 0%, #e6d7c4 100%);
+  background: linear-gradient(180deg, #f8f1e8 0%, #f3e9dc 100%);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(22, 50, 79, 0.14);
   box-shadow: 0 6px 18px rgba(29, 45, 68, 0.06);
@@ -422,7 +422,7 @@ main {
   padding: 1.35rem 0 2rem;
   text-align: center;
   color: var(--muted);
-  background: linear-gradient(180deg, #e6d7c4 0%, #dcc9b2 100%);
+  background: linear-gradient(180deg, #f3e9dc 0%, #eee1d1 100%);
 }
 
 .site-footer p {
